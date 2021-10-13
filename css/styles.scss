@@ -1,42 +1,212 @@
+@font-face {
+    font-family: spotify;
+    src: url(spo-font-2.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html, body{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: spotify;
+    background: rgb(49, 49, 49);
 
     .container{
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        width: 1500px;
+        height: 785px;
+        background: #191414;
+        border-radius: 20px;
 
-        .buttons{
-            background: #37A18E;
-            border: 0;
-            color: #df445c;
-            text-decoration: none;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-
-        a{
-            background: #37A18E;
-            color: brown;
-            text-decoration: none;
+        .top-menu{
+            width: 1500px;
+            height: 75px;
+            background: #1DB954;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #000;
+            color: #191414;
+            a{
+                color: #191414;
+                display: flex;
+                    text-decoration: none;
+                    color: #191414;
+            }
+            .logo{
+                #spo-logo{
+                    width: 75px;
+                    height: 75px;
+                }
+                h1{
+                    align-items: center;
+                    margin-left: 5px;
+                    display: flex;
+                }
+            }
+            
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-left: 75px;
+                
+                li{
+                    list-style-type: none;
+                    font-size: 1.5rem;
+                    display: flex;
+                    display: inline-block;
+                    line-height: 75px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    transition: 200ms all;
+                    &:hover{
+                        margin-bottom: 10px;
+                    }
+                }
+                span{
+                    margin-left: 80px;
+                }
+            }
         }
 
+
+        .content{
+            
+            img{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                width: 75%;
+                height: 77%;
+                display: flex;
+                margin: 0 auto;
+            }
+            .bottom-bar{
+                width: 100%;
+                height: 77px;
+                background: #1DB954;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                display: flex;
+                .left{       
+                    margin-top: 8px;
+                    margin-left: 20px;
+                    display: flex;
+                    width: 285px;
+                    img{
+                        width: 125px;
+                        height: 60px;
+                    }
+                    .text{
+                        width: 200px;
+                        h4{
+                            width: 200px;
+                            margin-left: 10px;
+                            margin-top: 10px;
+                            flex-direction: column;
+                        }
+                        p{
+                            margin-top:5px;
+                            margin-left: 10px;
+                            color: rgb(46, 43, 43);
+                            
+                        }
+                        img{
+                            width: 25px;
+                            height: 25px;
+                            margin-left: 150px;
+                            margin-top: -30px;
+                            
+                        }
+                    }
+                    
+                }
+
+                .middle{
+                    width: 600px;
+                    height: 77px;
+                    margin-left: 175px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .top{
+                        display: flex;
+                        width: 600px;
+                        height: 60px;
+                        margin-top: -20px;
+                        a{
+                            display: flex;
+                        width: 600px;
+                        height: 60px;
+                        margin-top: 0px;
+                        }
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            padding: 10px;
+                            margin-top: 10px;
+                        }
+                        #play{
+                            width: 75px;
+                            height: 75px;
+                            margin-top: -5px;
+                        }
+                    }
+                    .bottom{
+                        display: flex;
+                        width: 600px;
+                        height: 20px;
+                        margin-top: 60px;
+                        margin-left: -600px;
+                        .stick{
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            background: gray;
+                            width: 600px;
+                            height: 5px;
+                            margin-top: 8px;
+                            border-radius: 5px;
+                            .dark-stick{
+                                width: 165px;
+                                height: 5px;
+                                background: #191414;
+                                margin-top: 0px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .right{
+                    width: 350px;
+                    height: 77px;
+                    margin-left: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 40px;
+                        height: 40px; 
+                        margin-left: 0px; 
+                    }
+                    .sound-stick{
+                        width: 200px;
+                        height: 5px;
+                        background: #191414;
+                        margin-left: 40px;
+                        
+                    }
+                }
+            }
+        }
     }
 }
