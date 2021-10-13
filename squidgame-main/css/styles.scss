@@ -1,0 +1,339 @@
+@font-face {
+    font-family: squidgame;
+    src:url(squidgame.ttf);
+    font-style: normal;
+    font-weight: 100;
+  }
+
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    .container{
+        width: 100%;
+        height: 100%;
+        background: #000;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        font-family: squidgame;
+        align-items: center;
+
+        .rows{
+            display: flex;
+            flex-direction: row;
+            .row-box{
+                font-family: squidgame;
+                color: #fff;
+                font-size: 5rem;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                background: #37a18e;
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+                &:hover{
+                    color: #37a18e;
+                    background: #fff;
+                }
+            }
+        }       
+        .columns{
+            display: flex;
+            flex-direction: column;
+                .column-box{
+                    font-family: squidgame;
+                    color: #fff;
+                    font-size: 5rem;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5px;
+                    background: #df445c;
+                    width: 100px;
+                    height: 100px;
+                    transition: 200ms all;
+                    &:hover{
+                        color: #df445c;
+                        background: #fff;
+                    }
+                }
+            }
+        }   
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    font-size: 3rem;
+                    width: 45px;
+                    height: 45px;
+                    transition: 200ms all;
+                    margin: 3px;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 3rem;
+                        width: 50px;
+                        height: 50px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+@media only screen and (max-width: 400px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    font-size: 3rem;
+                    width: 45px;
+                    height: 45px;
+                    transition: 200ms all;
+                    margin: 3px;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 3rem;
+                        width: 50px;
+                        height: 50px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    margin: 3px;
+                    font-size: 2.5rem;
+                    width: 45px;
+                    height: 45px;
+                    transition: 200ms all;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 2.5rem;
+                        width: 40px;
+                        height: 40px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+@media only screen and (max-width: 350px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    margin: 3px;
+                    font-size: 2.5rem;
+                    width: 45px;
+                    height: 45px;
+                    transition: 200ms all;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 2.5rem;
+                        width: 40px;
+                        height: 40px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    font-size: 3rem;
+                    width: 50px;
+                    height: 50px;
+                    transition: 200ms all;
+                    margin: 3px;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 3rem;
+                        width: 50px;
+                        height: 50px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    font-size: 3rem;
+                    width: 50px;
+                    height: 50px;
+                    transition: 200ms all;
+                    margin: 3px;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 3rem;
+                        width: 50px;
+                        height: 50px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    font-size: 2.5rem;
+                    width: 35px;
+                    height: 35px;
+                    transition: 200ms all;
+                    margin: 3px;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 3rem;
+                        width: 50px;
+                        height: 50px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+@media only screen and (max-width: 300px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    font-size: 2.5rem;
+                    width: 35px;
+                    height: 35px;
+                    transition: 200ms all;
+                    margin: 3px;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        transition: 200ms all;
+                        font-size: 3rem;
+                        width: 50px;
+                        height: 50px;
+                        margin: 3px;
+                    }
+                }
+            }  
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    body {
+        width: 100%;
+        height: 100%;
+        .container{
+            width: 100%;
+            height: 100%;
+            .rows{
+                .row-box{
+                    font-size: 5rem;
+                    width: 100px;
+                    height: 100px;
+                    transition: 200ms all;
+                    margin: 5px;
+                }
+            }       
+            .columns{
+
+                    .column-box{
+                        font-size: 5rem;
+                        width: 100px;
+                        height: 100px;
+                        transition: 200ms all;
+                        margin: 5px;
+                    }
+                }
+            }  
+    }
+}
