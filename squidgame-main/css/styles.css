@@ -1,0 +1,360 @@
+@font-face {
+  font-family: squidgame;
+  src: url(squidgame.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html .container, body .container {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: squidgame;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .rows, body .container .rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+html .container .rows .row-box, body .container .rows .row-box {
+  font-family: squidgame;
+  color: #fff;
+  font-size: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #37a18e;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+html .container .rows .row-box:hover, body .container .rows .row-box:hover {
+  color: #37a18e;
+  background: #fff;
+}
+
+html .container .columns, body .container .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .columns .column-box, body .container .columns .column-box {
+  font-family: squidgame;
+  color: #fff;
+  font-size: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+  background: #df445c;
+  width: 100px;
+  height: 100px;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+html .container .columns .column-box:hover, body .container .columns .column-box:hover {
+  color: #df445c;
+  background: #fff;
+}
+
+@media only screen and (min-width: 400px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    font-size: 3rem;
+    width: 45px;
+    height: 45px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 3px;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    font-size: 3rem;
+    width: 45px;
+    height: 45px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 3px;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    margin: 3px;
+    font-size: 2.5rem;
+    width: 45px;
+    height: 45px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 2.5rem;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    margin: 3px;
+    font-size: 2.5rem;
+    width: 45px;
+    height: 45px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 2.5rem;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 3px;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 3px;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    font-size: 2.5rem;
+    width: 35px;
+    height: 35px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 3px;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    font-size: 2.5rem;
+    width: 35px;
+    height: 35px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 3px;
+  }
+  body .container .columns .column-box {
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .rows .row-box {
+    font-size: 5rem;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 5px;
+  }
+  body .container .columns .column-box {
+    font-size: 5rem;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: 200ms all;
+    transition: 200ms all;
+    margin: 5px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

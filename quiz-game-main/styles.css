@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: hsl(var(--hue), 100%, 20%);
+}
+
+body .container {
+  width: 800px;
+  max-width: 80%;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px 2px;
+          box-shadow: 0 0 10px 2px;
+}
+
+body .container .btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  outline: none;
+}
+
+body .container .btn:hover {
+  border-color: #000;
+}
+
+body .container .btn-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+body .container .btn-grid .correct {
+  --hue: var(--hue-correct);
+}
+
+body .container .btn-grid .wrong {
+  --hue: var(--hue-wrong);
+}
+
+body .container .start-btn, body .container .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+body .container .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .hide {
+  display: none;
+}
+
+.correct {
+  --hue: var(--hue-correct);
+}
+
+.wrong {
+  --hue: var(--hue-wrong);
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+.container{
+    text-align: center;
+    margin-top: 360px;
+
+    #number{
+        width: 196px;
+        height: 45px;
+        font-size: 21px;
+        text-align: center;
+        margin-left: 710px;
+        border: 0px;
+        display: flex;
+    }
+
+    #buton{
+        margin-top: 10px;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        color: #fff;
+        background: green;     
+        border: 0px;
+    }
+
+    #buton2{
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        color: #fff;
+        background: red;  
+        border: 0px;
+    }
+}

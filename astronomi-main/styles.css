@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face{
+    font-family: "Arial Bold";
+    font-size: 24px;
+    font-style: italic;
+    font-variant: normal;
+    font-family: Helvetica, sans-serif;
+    font-style:italic;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: Open Sans, sans-serif;
+}
+
+#diskutu{
+    width: 1901px;
+    height: 1500px;
+    background-image: linear-gradient(black, #1712A8, #30336b);
+    padding: 1px;
+}
+
+#header{
+    width: 1800px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+#logoresim{
+    float: left; 
+    margin-left: 150px;
+}
+
+#sloganArkaplan{
+    width: 230px;
+    height: 150px;
+    float: left;
+    margin-left: 0px;
+}
+
+#slogan{
+    width: 150px;
+    height: 120px;
+    float: left;
+    font-family: Helvetica, sans-serif;
+    font-style:italic;
+    font-size: 45px;
+    color: #fff;
+    margin-left: -230px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+ul.menu{
+    width: 900px;
+    height: 70px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+
+ul.menu >li{
+    float: left;
+    margin-top: 0px;
+    font-size: 30px;
+    position: relative;
+    
+}
+
+ul.menu >li >a{
+    color: #fff;
+    display: block;
+    padding: 0 42px;
+    line-height: 70px;
+    
+}
+
+ul.menu ul{
+    width: 242px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: hidden;
+    background: #130f40;
+}
+
+ul.menu ul li a{
+    display: block;
+    padding: 7px 12px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+ul.menu >li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 70px;
+}
+
+#icerik{
+    width: 1430px;
+    height: 1050px;
+    margin-top: 40px;
+    margin-left: 165px;
+    
+}
+
+#icerikSol{
+    width: 1100px;
+    height: 1050px;
+    float: left;
+    padding: 1px;
+}
+
+#icerikSag{
+    width: 330px;
+    height: 1050px;
+    margin-left: 1100px;
+}
+
+#haberFoto{
+    width: 1000px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#uzayaCikiyoruz{
+    color: #fff;
+    margin-left: 10px;
+    margin-top: -55px;
+}
+
+.ikincilHaberler{
+    width: 475px;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 25px;
+    float: left;
+    
+}
+
+#duyurular{
+    width: 330px;
+    height: 980px;
+    margin-top: 36px;
+    
+}
+
+.duyuru{
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 13px;
+    margin-top: 13px;
+    border: 1px solid #fff;
+}
+
+.tarih{
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.duyuruIcerik{
+    color: #fff;
+    text-align: center;
+}
+
+#duyurularYazıBaslik{
+    color: #fff;
+    font-size: 30px;
+    line-height: 1px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.duyuruKucuk{
+    width: 300px;
+    height: 85px;
+    margin-left: 13px;
+    margin-top: 13px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.tarihKucuk{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.duyuruIcerikKucuk{
+    color: #fff;
+    text-align: center;
+}
+
+#footer{
+    width: 1901px;
+    height: 175px;
+    background: #1b1b1b;
+    margin-top: 35px;
+    padding-top: 1px;
+}
+
+#footerYazi{
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}
+
+#duyuruIcerikA{
+    color: #fff;
+    margin-left: 70px;
+}
+
+.haberBaslik{
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.haberFoto{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.haberIcerik{
+    color: #fff;
+    width: 1000px;
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.duyuruHaberFoto{
+    border-radius: 20px;
+}

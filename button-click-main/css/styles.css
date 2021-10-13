@@ -1,0 +1,47 @@
+@font-face {
+  src: url(squidgame.ttf);
+  font-family: squidgame;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #333;
+  font-family: squidgame;
+}
+
+html .container, body .container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 34% 33% 33% 33%;
+      grid-template-rows: 34% 33% 33% 33%;
+}
+
+html .container .butonlar, body .container .butonlar {
+  font-family: squidgame;
+  color: #fff;
+  background: blueviolet;
+  font-size: 3rem;
+  border: 1px solid brown;
+  padding: 5px;
+}
+
+html .container #buton6, body .container #buton6 {
+  visibility: visible;
+}
+
+html .container #buton1, html .container #buton2, html .container #buton3, html .container #buton4, html .container #buton5, html .container #buton7, html .container #buton8, html .container #buton9, html .container #buton10, html .container #buton11, html .container #buton12, body .container #buton1, body .container #buton2, body .container #buton3, body .container #buton4, body .container #buton5, body .container #buton7, body .container #buton8, body .container #buton9, body .container #buton10, body .container #buton11, body .container #buton12 {
+  visibility: hidden;
+}
+/*# sourceMappingURL=styles.css.map */
