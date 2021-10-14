@@ -1,240 +1,118 @@
-@font-face {
-    font-family: youtube-light;
-    src: url(youtube-sans-light.ttf);
-}
-
-@font-face {
-    font-family: youtube;
-    src: url(youtube-sans.ttf);
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: youtube-light;
-
-    a{
-        text-decoration: none;
-        margin-top: 10px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Youtube Music</title>
+</head>
+<body>
     
-    .container{
-        width: 100%;
-        height: 100%;
-        .header{
-            width: 100%;
-            height: 50px;
-            background: #000;
-            display: flex;
-            .left{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img{
-                    width: 40px;
-                    height: 40px;
-                    margin-left: 5px;
-                }
-                h2{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: #fff;
-                    margin-left: 5px;
-                }
-            }
-            
-            
-        }
+    <div class="container">
+        <div class="header">
+            <a href="#"><div class="left">
+                <img src="img/ytm.png" alt="">
+                <h2>MUSIC</h2>
+            </div></a>
 
-        .middle{
-            width: 560px;
-            height: 50px;
-            margin-left: 440px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            ul{
-                display: flex;
-                margin-left: -50px;
+            <div class="middle">
+                <ul>
+                    <a href="#" class="active">Ana Sayfa<li></li></a>
+                    <a href="#">Keşfet<li></li></a>
+                    <a href="#">Kitaplık<li></li></a>
+                    <a href="#">Arayın<li></li></a>
+                </ul>
+            </div>
+
+            <div class="right">
+                <img src="img/cast.png" alt="">
+                <div class="foto">E</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="top">
+                <div class="text">
+                    <p>YENİDEN DİNLEYİN</p>
+                    <h1><b>Akşam müzikleriniz</b></h1>
+                </div>
                 
-                a{
-                    color: rgb(173, 173, 173);
-                    margin-left: 40px;
-                    font-family: youtube;
-                    text-decoration: none;
-                    font-size: 1.5rem;
-                    &:hover{
-                        color:white;
-                    }
-                    &:active{
-                        color: #fff;
-                    }
-                    
-                }
-                .active{
-                    color: #fff;
-                }
-                li{
-                    display: flex;
-                    list-style-type: none;
-                    display: flex;
+                <div class="musics">
+                    <div class="music-box">
+                        <img class="picture" src="img/money.png" alt="">
+                        <h3>MONEY</h3>
+                        <p>Şarkı • LISA</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="picture" src="img/taki_taki.png" alt="">
+                        <h3>Taki Taki (Selena Gomez, Ozuna ve Cardi B eşliğinde)</h3>
+                        <p>Şarkı • DJ Snake</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="picture" src="img/no_lie.jpg" alt="">
+                        <h3>No Lie (Dua Lipa eşliğinde)</h3>
+                        <p>Şarkı • Sean Paul</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="picture" src="img/the_way_i_are.jpg" alt="">
+                        <h3>The Way I Are (Radio Edit) (Keri Hilson eşliğinde)</h3>
+                        <p>Şarkı • Timbaland</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="picture" src="img/say_my_name.webp" alt="">
+                        <h3>Say My Name (Bebe Rexha ve J Balvin eşliğinde)</h3>
+                        <p>Şarkı • David Guetta</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="picture" src="img/drop_that_low.jpg" alt="">
+                        <h3>Drop That Low (When I Dip) [Extended Mix</h3>
+                        <p>Şarkı • Tujamo</p>
+                        </div>
+                </div>
 
-                }
-            }
-        }
+            </div>
+            <div class="bottom">
+                <div class="text">
+                    <h1><b>En sevdikleriniz</b></h1>
+                </div>
+                
+                <div class="musics">
+                    <div class="music-box">
+                        <img class="pp" src="img/djsnake.jpg" alt="">
+                        <h3 style="text-align: center;">DJ Snake</h3>
+                        <p style="text-align: center;">21 Mn abone</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="pp" src="img/blackpink.jpg" alt="">
+                        <h3 style="text-align: center;">BLACKPINK</h3>
+                        <p style="text-align: center;">68,1 Mn abone</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="pp" src="img/alanwalker.jpg" alt="">
+                        <h3 style="text-align: center;">Alan Walker</h3>
+                        <p style="text-align: center;">40,5 Mn abone</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="picture" src="img/turn_me_on.jpg" alt="">
+                        <h3 style="text-align: center;">Turn Me On</h3>
+                        <p style="text-align: center;">Şarkı • David Guetta</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="picture" src="img/magenta_riddim.jpg" alt="">
+                        <h3 style="text-align: center;">Magenta Riddim</h3>
+                        <p style="text-align: center;">Şarkı • DJ Snake</p>
+                        </div>
+                    <div class="music-box">
+                        <img class="pp" src="img/martingarrix.jpg" alt="">
+                        <h3 style="text-align: center;">Martin Garrix</h3>
+                        <p style="text-align: center;">14,2 Mn abone</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-        .right{
-            width: 250px;
-            height: 50px;
-            margin-left: 490px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                cursor: pointer;
-                width: 40px;
-                height: 30px;
-                margin-top: 10px;
-            }
-            .foto{
-                width: 40px;
-                height: 40px;
-                background: blueviolet;
-                border-radius: 100px;
-                margin-left: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #fff;
-                font-size: 2rem;
-                margin-top: 10px;
-                cursor: pointer;
-            }
-        }
-
-        .content{
-            width: 100%;
-            height: 96.7%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #000;
-            color: #fff;
-            margin-top: -20px;
-
-            .top{
-                width: 100%;
-                height: 450px;
-                .text{
-                    margin-left: 18px;
-                    margin-top: 40px;
-                    p{
-                        font-size: 1.2rem;
-                        color: rgb(136, 136, 136);
-                    }
-                    h1{
-                        font-size: 3rem;
-                    }
-                }
-               
-                .musics{
-                    width: 100%;
-                    height: 329px;
-                    display: flex;
-                    .music-box{
-                        width: 250px;
-                        height: 329px;
-                        margin-left: 18px;
-                        display: flex;
-                        flex-direction: column;
-                        align-content: center;
-                        cursor: pointer;
-
-                        .image{
-                            width: 250px;
-                            height: 250px;
-                            background: chocolate;
-                            border-radius: 5px;
-                            
-                        }
-                        h3{
-                            font-size: 1.3rem;
-                        }
-                        p{
-                            font-size: 1.5rem;
-                            color: rgb(179, 179, 179);
-                        }
-                    }
-                }
-
-            }
-            .bottom{
-                width: 100%;
-                height: 450px;
-                .text{
-                    margin-left: 18px;
-                    margin-top: 40px;
-                    p{
-                        font-size: 1.2rem;
-                        color: rgb(136, 136, 136);
-                    }
-                    h1{
-                        font-size: 3rem;
-                    }
-                }
-               
-                .musics{
-                    width: 100%;
-                    height: 329px;
-                    display: flex;
-                    
-                    .music-box{
-                        width: 250px;
-                        height: 329px;
-                        margin-left: 18px;
-                        display: flex;
-                        flex-direction: column;
-                        align-content: center;
-                        cursor: pointer;
-                        .pp{
-                            border-radius: 150px;
-                        }
-                        .picture{
-                            border-radius: 5px;
-
-
-                        }
-                        .image{
-                            width: 250px;
-                            height: 250px;
-                            background: chocolate;
-                            border-radius: 5px;
-                            
-                            
-                        }
-                        h3{
-                            font-size: 1.3rem;
-                            
-                        }
-                        p{
-                            font-size: 1.5rem;
-                            color: rgb(179, 179, 179);
-                        }
-
-                    }
-                }
-            }
-
-        }
-    }
-}
+</body>
+</html>
