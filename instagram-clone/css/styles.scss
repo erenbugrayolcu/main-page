@@ -1,0 +1,218 @@
+@font-face {
+    font-family: instagram;
+    src: url(instagram.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+
+    .container{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+
+        .header{
+            width: 100%;
+            height: 15%;
+            margin-top: 0;
+            background: #fff;
+            position: sticky;
+            top: 0;
+
+
+            .header-top{
+                display: flex;
+                align-items: center;
+                font-family: instagram;
+                width: 100%;
+                height: 30%;
+
+                h3{
+                    font-size: 1.6rem;
+                    margin-left: 15px;
+                }
+
+                .icons{
+                    display: flex;
+                    margin-left: 220px;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        margin-left: 15px;
+                    }
+                }
+                
+            }
+
+            .header-bottom{
+                width: 100%;
+                height: 70%;
+                display: flex;
+                flex-direction: row;
+
+                .profiles{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .profile-picture{
+                        width: 65px;
+                        height: 65px;
+                        background: violet;
+                        border-radius: 150px;
+                        border: 2px solid rgb(0, 175, 0);
+                        margin-top: 8px;
+                    }
+                    p{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+
+        .content{
+            width: 100%;
+            height: 80%;
+            background: #fff;
+
+            .post{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 50%;
+                background: #fff;
+                border-bottom: 1px solid #000;
+
+                .top{
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    align-items: center;
+                    
+
+                    .profile-picture{
+                        width: 30px;
+                        height: 30px;
+                        background: darkorange;
+                        border-radius: 150px;
+                        margin-left: 10px;
+                    }
+
+                    .username{
+                        margin-left: 10px;
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .middle{
+                    width: 100%;
+                    height: 75%;
+                    display: flex;
+                    background: #fff;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 70%;
+                        height: 95%;
+                        background: #fff;
+                    }
+                }
+
+                .bottom{
+                    width: 100%;
+                    height: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: -13px;
+
+                    .top{
+                        width: 100%;
+                        height: 50%;
+
+                        .icons{
+                            width: 92%;
+                            height: 100%;
+                            display: flex;
+                            margin-left: 5px;
+                            margin-top: 15px;
+                            img{
+                                margin-left: 5px;
+                            }
+                        }
+
+                        .save{
+                            width: 6%;
+                            height: 100%;
+                            display: flex;
+                            margin-left: 0px;
+                            margin-top: 5px;
+                        }
+                    }
+
+                    .bot{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        .profile-picture{
+                            width: 20px;
+                            height: 20px;
+                            background: darkorange;
+                            border-radius: 150px;
+                            margin-left: 10px;
+                            display: flex;
+                        }
+                        
+                        .users{
+                            margin-left: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .footer{
+            width: 30%;
+            height: 4%;
+            position: fixed;
+            bottom: 0;
+            background: #fff;
+
+            .icons{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 10%;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 40px 0 40px;
+                }
+            }
+        }
+    }
+}

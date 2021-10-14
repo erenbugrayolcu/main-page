@@ -1,0 +1,300 @@
+@font-face {
+  font-family: instagram;
+  src: url(instagram.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #444;
+}
+
+html .container, body .container {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+}
+
+html .container .header, body .container .header {
+  width: 100%;
+  height: 15%;
+  margin-top: 0;
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+html .container .header .header-top, body .container .header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: instagram;
+  width: 100%;
+  height: 30%;
+}
+
+html .container .header .header-top h3, body .container .header .header-top h3 {
+  font-size: 1.6rem;
+  margin-left: 15px;
+}
+
+html .container .header .header-top .icons, body .container .header .header-top .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 220px;
+}
+
+html .container .header .header-top .icons img, body .container .header .header-top .icons img {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+html .container .header .header-bottom, body .container .header .header-bottom {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+html .container .header .header-bottom .profiles, body .container .header .header-bottom .profiles {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .header .header-bottom .profiles .profile-picture, body .container .header .header-bottom .profiles .profile-picture {
+  width: 65px;
+  height: 65px;
+  background: violet;
+  border-radius: 150px;
+  border: 2px solid #00af00;
+  margin-top: 8px;
+}
+
+html .container .header .header-bottom .profiles p, body .container .header .header-bottom .profiles p {
+  font-size: 0.9rem;
+}
+
+html .container .content, body .container .content {
+  width: 100%;
+  height: 80%;
+  background: #fff;
+}
+
+html .container .content .post, body .container .content .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 50%;
+  background: #fff;
+  border-bottom: 1px solid #000;
+}
+
+html .container .content .post .top, body .container .content .post .top {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .content .post .top .profile-picture, body .container .content .post .top .profile-picture {
+  width: 30px;
+  height: 30px;
+  background: darkorange;
+  border-radius: 150px;
+  margin-left: 10px;
+}
+
+html .container .content .post .top .username, body .container .content .post .top .username {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+html .container .content .post .middle, body .container .content .post .middle {
+  width: 100%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .content .post .middle img, body .container .content .post .middle img {
+  width: 70%;
+  height: 95%;
+  background: #fff;
+}
+
+html .container .content .post .bottom, body .container .content .post .bottom {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -13px;
+}
+
+html .container .content .post .bottom .top, body .container .content .post .bottom .top {
+  width: 100%;
+  height: 50%;
+}
+
+html .container .content .post .bottom .top .icons, body .container .content .post .bottom .top .icons {
+  width: 92%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+html .container .content .post .bottom .top .icons img, body .container .content .post .bottom .top .icons img {
+  margin-left: 5px;
+}
+
+html .container .content .post .bottom .top .save, body .container .content .post .bottom .top .save {
+  width: 6%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+html .container .content .post .bottom .bot, body .container .content .post .bottom .bot {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+html .container .content .post .bottom .bot .profile-picture, body .container .content .post .bottom .bot .profile-picture {
+  width: 20px;
+  height: 20px;
+  background: darkorange;
+  border-radius: 150px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .content .post .bottom .bot .users, body .container .content .post .bottom .bot .users {
+  margin-left: 10px;
+}
+
+html .container .footer, body .container .footer {
+  width: 30%;
+  height: 4%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+
+html .container .footer .icons, body .container .footer .icons {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .footer .icons img, body .container .footer .icons img {
+  width: 10%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 40px 0 40px;
+}
+/*# sourceMappingURL=styles.css.map */
