@@ -37,13 +37,16 @@ html .container .font-box, body .container .font-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1px;
+}
+
+html .container .font-box a, body .container .font-box a {
+  margin-left: 20px;
 }
 
 html .container .font-box i, body .container .font-box i {
   color: gray;
   font-size: 5rem;
-  margin-left: 20px;
+  margin-left: 0px;
   -webkit-transition: .2s all;
   transition: .2s all;
 }
@@ -90,14 +93,14 @@ html .container .font-box .fas.fa-radiation:hover, body .container .font-box .fa
           box-shadow: chartreuse 0 0 50px 15px;
 }
 
-html .container .text, body .container .text {
+html .text, body .text {
   width: 100%;
   height: auto;
   padding: 0 500px;
   font-size: 1.3rem;
 }
 
-html .container .text h1, html .container .text p, body .container .text h1, body .container .text p {
+html .text h1, html .text p, body .text h1, body .text p {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -112,7 +115,7 @@ html .container .text h1, html .container .text p, body .container .text h1, bod
   text-align: center;
 }
 
-html .container .light-div, body .container .light-div {
+html .light-div, body .light-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +126,7 @@ html .container .light-div, body .container .light-div {
   height: auto;
 }
 
-html .container .light-div .lights, body .container .light-div .lights {
+html .light-div .lights, body .light-div .lights {
   cursor: pointer;
   height: 100%;
   width: 3.3%;
