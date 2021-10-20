@@ -22,6 +22,7 @@ html, body{
             justify-content: center;
             align-items: center; 
             padding-top: 1px;    
+
             i{
                 color: gray;
                 font-size: 5rem;
@@ -32,7 +33,6 @@ html, body{
                 &:hover{
                     color: red;
                     margin-bottom: 40px;
-
                 }
             }
             .fab.fa-facebook{
@@ -66,6 +66,16 @@ html, body{
                 &:hover{
                     color: red;
                     margin-bottom: 40px;
+
+                }
+            }
+
+            .fas.fa-radiation{
+                border-radius: 150px;
+                &:hover{
+                    background: rgb(255, 240, 31);
+                    margin-bottom: 40px;
+                    color: #000;
 
                 }
             }
@@ -159,7 +169,7 @@ html, body{
                 
             }
         }
-      }
+    }
     }
   }
 
@@ -218,6 +228,6 @@ html, body{
                 
             }
         }
-      }
     }
-  }
+    }
+}

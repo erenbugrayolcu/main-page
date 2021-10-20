@@ -78,6 +78,16 @@ html .container .font-box .fab.fa-opera:hover, body .container .font-box .fab.fa
   margin-bottom: 40px;
 }
 
+html .container .font-box .fas.fa-radiation, body .container .font-box .fas.fa-radiation {
+  border-radius: 150px;
+}
+
+html .container .font-box .fas.fa-radiation:hover, body .container .font-box .fas.fa-radiation:hover {
+  background: #fff01f;
+  margin-bottom: 40px;
+  color: #000;
+}
+
 html .container .text, body .container .text {
   width: 100%;
   height: auto;
