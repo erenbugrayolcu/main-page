@@ -110,7 +110,7 @@ html .container .header .menu ul a, body .container .header .menu ul a {
 }
 
 html .container .header .menu ul a:hover, body .container .header .menu ul a:hover {
-  background: #000;
+  background: #121213;
 }
 
 html .container .header .menu ul a li, body .container .header .menu ul a li {
@@ -150,7 +150,7 @@ html .container .header .icons a i, body .container .header .icons a i {
 }
 
 html .container .header .icons a i:hover, body .container .header .icons a i:hover {
-  color: #000;
+  background: #121213;
 }
 
 html .container .loader, body .container .loader {
