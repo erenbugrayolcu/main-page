@@ -72,11 +72,15 @@ html .container .header .logo h2, body .container .header .logo h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+html .container .header .logo h2 a, body .container .header .logo h2 a {
+  text-decoration: none;
+  color: #fff;
 }
 
 html .container .header .menu, body .container .header .menu {
@@ -142,7 +146,7 @@ html .container .header .icons, body .container .header .icons {
 }
 
 html .container .header .icons a, body .container .header .icons a {
-  color: #000;
+  color: #fff;
 }
 
 html .container .header .icons a i, body .container .header .icons a i {
@@ -150,6 +154,6 @@ html .container .header .icons a i, body .container .header .icons a i {
 }
 
 html .container .header .icons a i:hover, body .container .header .icons a i:hover {
-  color: #fff;
+  color: #000;
 }
 /*# sourceMappingURL=styles.css.map */
