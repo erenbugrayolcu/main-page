@@ -12,10 +12,6 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -129,5 +125,31 @@ html .container .header .menu ul a li, body .container .header .menu ul a li {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 43px;
+}
+
+html .container .header .icons, body .container .header .icons {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .header .icons a, body .container .header .icons a {
+  color: #000;
+}
+
+html .container .header .icons a i, body .container .header .icons a i {
+  font-size: 3rem;
+}
+
+html .container .header .icons a i:hover, body .container .header .icons a i:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
