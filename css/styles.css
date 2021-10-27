@@ -211,12 +211,7 @@ html .container .content h1, body .container .content h1 {
     width: 100%;
   }
   body .container .header .menu {
-    width: 57%;
-    height: 100%;
     display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   body .container .header .icons {
     width: 100%;
