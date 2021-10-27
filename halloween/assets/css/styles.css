@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Overpass:wght@300&family=Poppins:wght@900&family=Righteous&family=Roboto:wght@300;400&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3.5rem 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background: -webkit-gradient(linear, left top, right top, from(#598349), color-stop(#838149), to(100%));
+  background: linear-gradient(90deg, #598349 0%, #838149, 100%);
+  color: #dad8d7;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.main {
+  overflow: hidden;
+}
+/*# sourceMappingURL=styles.css.map */
