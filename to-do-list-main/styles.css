@@ -64,15 +64,7 @@ body .container #clearToDo:active {
   background: rgba(184, 0, 0, 0.993);
 }
 
-body .container .to-dos {
-  margin-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .paragraph-styling {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   cursor: pointer;
   font-size: 35px;
@@ -80,10 +72,7 @@ body .container .to-dos {
   text-transform: capitalize;
 }
 
-@media only screen and (max-width: 400px) {
-  #addToDo, #clearToDo {
-    margin-top: 10px;
-    margin-left: 5px;
-  }
+.to-dos {
+  margin-top: 25px;
 }
 /*# sourceMappingURL=styles.css.map */

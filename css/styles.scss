@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Overpass:wght@300&family=Righteous&family=Roboto:wght@300;400&family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,32 +13,72 @@ html,body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: 'Fredoka One', cursive;
 
     .container{
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background: #333;
 
-        .buttons{
-            background: #37A18E;
-            border: 0;
-            color: #df445c;
-            text-decoration: none;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-
-        a{
-            background: #37A18E;
-            color: brown;
-            text-decoration: none;
+        .header{
+            width: 100%;
+            height: 8%;
+            background: blueviolet;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
             align-items: center;
-            border: 1px solid #000;
-        }
 
+            .logo{
+                font-size: 2rem;
+                width: 20%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    color: #fff;
+                    user-select: none;
+                }
+            }
+
+            .menu{
+               width: 65%;
+               height: 100%;
+               display: flex;
+               justify-content: center;
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        transition: .1s all;
+                        text-decoration: none;
+                        color: #fff;
+                        background: blueviolet;
+                        font-size: 1.5rem;
+                        &:hover{
+                            background: #000;
+                        }
+                        li{
+                            width: 100%;
+                            height: 100%;
+                            list-style-type: none;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 43px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
     }
 }

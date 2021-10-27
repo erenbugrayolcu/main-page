@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Overpass:wght@300&family=Righteous&family=Roboto:wght@300;400&family=Ubuntu&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,43 +22,112 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Fredoka One', cursive;
 }
 
 html .container, body .container {
   width: 100%;
   height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
-}
-
-html .container .buttons, body .container .buttons {
-  background: #37A18E;
-  border: 0;
-  color: #df445c;
-  text-decoration: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-html .container a, body .container a {
-  background: #37A18E;
-  color: brown;
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #333;
+}
+
+html .container .header, body .container .header {
+  width: 100%;
+  height: 8%;
+  background: blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .header .logo, body .container .header .logo {
+  font-size: 2rem;
+  width: 20%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container .header .logo h2, body .container .header .logo h2 {
+  width: 100%;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html .container .header .menu, body .container .header .menu {
+  width: 65%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container .header .menu ul, body .container .header .menu ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container .header .menu ul a, body .container .header .menu ul a {
+  -webkit-transition: .1s all;
+  transition: .1s all;
+  text-decoration: none;
+  color: #fff;
+  background: blueviolet;
+  font-size: 1.5rem;
+}
+
+html .container .header .menu ul a:hover, body .container .header .menu ul a:hover {
+  background: #000;
+}
+
+html .container .header .menu ul a li, body .container .header .menu ul a li {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 43px;
 }
 /*# sourceMappingURL=styles.css.map */
