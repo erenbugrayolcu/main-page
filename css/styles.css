@@ -109,7 +109,6 @@ html .container .header .menu ul a, body .container .header .menu ul a {
   transition: .1s all;
   text-decoration: none;
   color: #fff;
-  background: blueviolet;
   font-size: 1.5rem;
 }
 
