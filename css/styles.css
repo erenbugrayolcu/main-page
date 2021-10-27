@@ -147,6 +147,7 @@ html .container .header .icons, body .container .header .icons {
 
 html .container .header .icons a, body .container .header .icons a {
   color: #fff;
+  margin-left: 20px;
 }
 
 html .container .header .icons a i, body .container .header .icons a i {
