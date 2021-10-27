@@ -150,7 +150,7 @@ html .container .header .icons a i, body .container .header .icons a i {
 }
 
 html .container .header .icons a i:hover, body .container .header .icons a i:hover {
-  background: #121213;
+  color: #121213;
 }
 
 html .container .loader, body .container .loader {
