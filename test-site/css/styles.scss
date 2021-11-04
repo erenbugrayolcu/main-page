@@ -58,6 +58,7 @@ $z-fixed: 100;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -133,7 +134,7 @@ button{
 
  .header{
      width: 100%;
-     background: $body-color;
+     background: $container-color;
      position: fixed;
      top: 0;
      left: 0;
@@ -676,7 +677,7 @@ button{
         width: 5px;
         height: 5px;
         background: $title-color;
-        border-radius: 50%;
+        border-radius: 50%
     }
 }
 
@@ -707,14 +708,44 @@ button{
     bottom: 3rem;
 }
 
+.add{
+    width: 130px;
+    height: 110px;
+    position: absolute;
+    color: red;
+    font-size: 1.2rem;
+    margin: 175px 1090px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animateAdd 1s infinite alternate-reverse;
+    flex-direction: column;
+
+    .case{
+        width: 60px;
+    }
+}
+
 ::-webkit-scrollbar{
     width: 0.4rem;
-    background: hsl(221, 28%, 50%)
 }
 
 ::-webkit-scrollbar-thumb{
     background: $title-color;
     border-radius: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background: hsl(221, 28%, 50%);
+}
+
+@keyframes animateAdd{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.8);
+    }
 }
 
 @media screen and (max-width: 320px){
