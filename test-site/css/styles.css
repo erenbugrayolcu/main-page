@@ -732,12 +732,12 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 0.6rem;
-  background: #413e3e;
+  width: 0.4rem;
+  background: #5c72a3;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #272525;
+  background: white;
   border-radius: .5rem;
 }
 
