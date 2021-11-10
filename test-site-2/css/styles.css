@@ -118,19 +118,24 @@ html .container .content .content-bot, body .container .content .content-bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 html .container .content .content-bot .lipsum1, body .container .content .content-bot .lipsum1 {
   width: 65%;
   margin-top: 23px;
   color: #111;
+  padding-right: 20px;
 }
 
 html .container .content .content-bot .foto1, body .container .content .content-bot .foto1 {
   width: 275px;
   height: 350px;
   border-radius: 10px;
-  margin-left: 16px;
+  margin-left: 0px;
   margin-top: 23px;
   background-size: cover;
 }
