@@ -198,7 +198,7 @@ html .container .footer .icons #lin:hover, body .container .footer .icons #lin:h
           transform: translateY(-0.5rem);
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   html .container, body .container {
     background-size: cover;
   }
