@@ -62,6 +62,12 @@ html,body{
                          justify-content: center;
                          span{
                              border: 1px solid #000;
+                             transition: .2s all;
+                             &:hover{
+                                 background:rgb(202, 0, 0);
+                                 color: #fff;
+                                 border: none;
+                             }
                          }
                          a{
                              transition: .1s all;

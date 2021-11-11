@@ -105,6 +105,14 @@ html .container .header .navbar ul, body .container .header .navbar ul {
 
 html .container .header .navbar ul span, body .container .header .navbar ul span {
   border: 1px solid #000;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+html .container .header .navbar ul span:hover, body .container .header .navbar ul span:hover {
+  background: #ca0000;
+  color: #fff;
+  border: none;
 }
 
 html .container .header .navbar ul a, body .container .header .navbar ul a {
