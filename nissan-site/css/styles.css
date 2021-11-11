@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mina&family=Nova+Square&family=Overpass:wght@300&family=Poppins&family=Righteous&family=Roboto:wght@300;400&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container, body .container {
+  width: 92.3%;
+  height: 100%;
+  background: #d4d4d4;
+}
+
+html .container .header, body .container .header {
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(yeni-juke.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .header .logo-link, body .container .header .logo-link {
+  width: 10%;
+  height: 17%;
+}
+
+html .container .header .logo-link .logo, body .container .header .logo-link .logo {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .header .logo-link .logo img, body .container .header .logo-link .logo img {
+  width: 80%;
+  height: 80%;
+}
+
+html .container .header .navbar, body .container .header .navbar {
+  width: 60%;
+  height: 17%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html .container .header .navbar ul, body .container .header .navbar ul {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container .header .navbar ul span, body .container .header .navbar ul span {
+  border: 1px solid #000;
+}
+
+html .container .header .navbar ul a, body .container .header .navbar ul a {
+  -webkit-transition: .1s all;
+  transition: .1s all;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+html .container .header .navbar ul a:hover, body .container .header .navbar ul a:hover {
+  border-bottom: 3px solid #000;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+html .container .header .navbar ul a li, body .container .header .navbar ul a li {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 13px;
+}
+
+html .container .header .header-info, body .container .header .header-info {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: -235px;
+  margin-top: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html .container .header .header-info h1, body .container .header .header-info h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+
+html .container .header .header-info h1 span, body .container .header .header-info h1 span {
+  color: #ca0000;
+}
+
+html .container .header .header-info button, body .container .header .header-info button {
+  width: 165px;
+  height: 60px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background: #ca0000;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+html .container .header .header-info button:hover, body .container .header .header-info button:hover {
+  background: #7c0000;
+}
+
+html .container .main, body .container .main {
+  width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .vehicles, body .container .main .vehicles {
+  width: 100%;
+  height: 625px;
+  background: #e7e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .vehicles .text, body .container .main .vehicles .text {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 150px;
+}
+
+html .container .main .vehicles .text p, body .container .main .vehicles .text p {
+  font-size: 1.2rem;
+}
+
+html .container .main .vehicles .menu, body .container .main .vehicles .menu {
+  width: 80%;
+  height: 75px;
+  border-bottom: 2px solid #000;
+}
+
+html .container .main .vehicles .menu .navbar, body .container .main .vehicles .menu .navbar {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .vehicles .menu .navbar ul, body .container .main .vehicles .menu .navbar ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .container .main .vehicles .menu .navbar ul span, body .container .main .vehicles .menu .navbar ul span {
+  border-bottom: 5px solid #000;
+}
+
+html .container .main .vehicles .menu .navbar ul span:hover, body .container .main .vehicles .menu .navbar ul span:hover {
+  border-bottom-color: gray;
+}
+
+html .container .main .vehicles .menu .navbar ul a, body .container .main .vehicles .menu .navbar ul a {
+  -webkit-transition: .1s all;
+  transition: .1s all;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+html .container .main .vehicles .menu .navbar ul a:hover, body .container .main .vehicles .menu .navbar ul a:hover {
+  color: gray;
+}
+
+html .container .main .vehicles .menu .navbar ul a li, body .container .main .vehicles .menu .navbar ul a li {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 13px;
+  font-size: 1.5rem;
+}
+
+html .container .main .vehicles .cars, body .container .main .vehicles .cars {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main .vehicles .cars .car-top, body .container .main .vehicles .cars .car-top {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .vehicles .cars .car-top .car-info, body .container .main .vehicles .cars .car-top .car-info {
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  background: #e7e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+html .container .main .vehicles .cars .car-top .car-info:hover, body .container .main .vehicles .cars .car-top .car-info:hover {
+  background: #fff;
+}
+
+html .container .main .vehicles .cars .car-top .car-info:hover img, body .container .main .vehicles .cars .car-top .car-info:hover img {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+html .container .main .vehicles .cars .car-top .car-info img, body .container .main .vehicles .cars .car-top .car-info img {
+  width: 200px;
+  height: 125px;
+  margin-top: 10px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+html .container .main .vehicles .cars .car-top .car-info .text, body .container .main .vehicles .cars .car-top .car-info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: centere;
+      -ms-flex-align: centere;
+          align-items: centere;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -15px;
+}
+
+html .container .main .vehicles .cars .car-top .car-info .text h4, html .container .main .vehicles .cars .car-top .car-info .text p, body .container .main .vehicles .cars .car-top .car-info .text h4, body .container .main .vehicles .cars .car-top .car-info .text p {
+  width: 300px;
+  margin-left: 125px;
+}
+
+html .container .main .vehicles .cars .car-top .car-info .text p, body .container .main .vehicles .cars .car-top .car-info .text p {
+  font-size: .8rem;
+}
+
+html .container .main .vehicles .cars .car-bot, body .container .main .vehicles .cars .car-bot {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .vehicles .cars .car-bot .car-info, body .container .main .vehicles .cars .car-bot .car-info {
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  background: #e7e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+html .container .main .vehicles .cars .car-bot .car-info:hover, body .container .main .vehicles .cars .car-bot .car-info:hover {
+  background: #fff;
+}
+
+html .container .main .vehicles .cars .car-bot .car-info:hover img, body .container .main .vehicles .cars .car-bot .car-info:hover img {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+html .container .main .vehicles .cars .car-bot .car-info img, body .container .main .vehicles .cars .car-bot .car-info img {
+  width: 200px;
+  height: 125px;
+  margin-top: 10px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+html .container .main .vehicles .cars .car-bot .car-info .text, body .container .main .vehicles .cars .car-bot .car-info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: centere;
+      -ms-flex-align: centere;
+          align-items: centere;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -15px;
+}
+
+html .container .main .vehicles .cars .car-bot .car-info .text h4, html .container .main .vehicles .cars .car-bot .car-info .text p, body .container .main .vehicles .cars .car-bot .car-info .text h4, body .container .main .vehicles .cars .car-bot .car-info .text p {
+  width: 300px;
+  margin-left: 125px;
+}
+
+html .container .main .vehicles .cars .car-bot .car-info .text p, body .container .main .vehicles .cars .car-bot .car-info .text p {
+  font-size: .8rem;
+}
+
+html .container .main .options, body .container .main .options {
+  width: 80%;
+  height: 200px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .options .option-box, body .container .main .options .option-box {
+  cursor: pointer;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  width: 275px;
+  height: 100px;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.4rem;
+}
+
+html .container .main .options .option-box:hover, body .container .main .options .option-box:hover {
+  color: #fff;
+  background: #ca0000;
+}
+/*# sourceMappingURL=styles.css.map */

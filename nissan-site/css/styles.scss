@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mina&family=Nova+Square&family=Overpass:wght@300&family=Poppins&family=Righteous&family=Roboto:wght@300;400&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container{
+        width: 92.3%;
+        height: 100%;
+        background: rgb(212, 212, 212);
+
+            .header{
+                width: 100%;
+                height: 700px;
+                display: flex;
+                justify-content: space-between;
+                background-image: url(yeni-juke.jpg);
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                .logo-link{
+                    width: 10%;
+                    height: 17%;
+                    .logo{
+                       width: 100%;
+                       height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 80%;
+                            height: 80%;
+                        }
+                    }
+                }
+                
+    
+                .navbar{
+                    width: 60%;
+                    height: 17%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: -30px;
+                    user-select: none;
+                     ul{
+                         width: 100%;
+                         height: 30%;
+                         display: flex;
+                         justify-content: center;
+                         span{
+                             border: 1px solid #000;
+                         }
+                         a{
+                             transition: .1s all;
+                             text-decoration: none;
+                             color: #000;
+                             font-size: 1rem;
+                             &:hover{
+                                 border-bottom: 3px solid #000;
+                                 transform: translateY(-.5rem);
+                             }
+                             li{
+                                 width: 100%;
+                                 height: 100%;
+                                 list-style-type: none;
+                                 display: flex;
+                                 align-items: center;
+                                 padding: 0 13px;
+                             }
+                         }   
+                     }
+                 }
+
+                .header-info{
+                    width: 40%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    margin-left: -235px;
+                    margin-top: 50px;
+                    user-select: none;
+                    h1{
+                        font-size: 3rem;
+                        letter-spacing: 4px;
+                        span{
+                            color: rgb(202, 0, 0);
+                        }
+                    }
+                    button{
+                        width: 165px;
+                        height: 60px;
+                        margin-top: 20px;
+                        outline: none;
+                        border: none;
+                        background: rgb(202, 0, 0);
+                        color: #fff;
+                        cursor: pointer;
+                        transition: .3s all;
+                        &:hover{
+                            background: rgb(124, 0, 0);
+                        }
+                    }
+                }
+            } 
+            
+            .main{
+                width: 100%;
+                height: 1000px;
+                // background: chocolate;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .vehicles{
+                    width: 100%;
+                    height: 625px;
+                    background: rgb(231, 231, 231);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .text{
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 150px;
+                        p{
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .menu{
+                        width: 80%;
+                        height: 75px;
+                        border-bottom: 2px solid #000;
+                        .navbar{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+            
+                             ul{
+                                 width: 100%;
+                                 height: 100%;
+                                 display: flex;
+                                 justify-content: space-between;
+                                 span{
+                                     border-bottom: 5px solid #000;
+                                     &:hover{
+                                         border-bottom-color: gray;
+                                     }
+                                 }
+                                 a{
+                                     transition: .1s all;
+                                     text-decoration: none;
+                                     color: #000;
+                                     font-size: 1rem;
+                                     &:hover{
+                                         color: gray;
+                                     }
+                                     li{
+                                         width: 100%;
+                                         height: 100%;
+                                         list-style-type: none;
+                                         display: flex;
+                                         align-items: center;
+                                         padding: 0 13px;
+                                         font-size: 1.5rem;
+                                     }
+                                 }   
+                             }
+                         }
+                    }
+
+                    .cars{
+                        width: 80%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .car-top{
+                            width: 100%;
+                            height: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .car-info{
+                                cursor: pointer;
+                                width: 300px;
+                                height: 200px;
+                                background: rgb(231, 231, 231);
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-direction: column;
+                                transition: .3s all;
+                                &:hover{
+                                    background: #fff;
+                                }
+                                &:hover img{
+                                    transform: translateY(-.5rem);
+                                }
+                                img{
+                                    width: 200px;
+                                    height: 125px;
+                                    margin-top: 10px;
+                                    transition: .3s all;
+                                }
+                                .text{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: centere;
+                                    flex-direction: column;
+                                    margin-top: -15px;
+                                    h4,p{
+                                        width: 300px;
+                                        margin-left: 125px;
+                                    }
+                                    p{
+                                        font-size: .8rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .car-bot{
+                            width: 100%;
+                            height: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .car-info{
+                                cursor: pointer;
+                                width: 300px;
+                                height: 200px;
+                                background: rgb(231, 231, 231);
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-direction: column;
+                                transition: .3s all;
+                                &:hover{
+                                    background: #fff;
+                                }
+                                &:hover img{
+                                    transform: translateY(-.5rem);
+                                }
+                                img{
+                                    width: 200px;
+                                    height: 125px;
+                                    margin-top: 10px;
+                                    transition: .3s all;
+                                }
+                                .text{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: centere;
+                                    flex-direction: column;
+                                    margin-top: -15px;
+                                    h4,p{
+                                        width: 300px;
+                                        margin-left: 125px;
+                                    }
+                                    p{
+                                        font-size: .8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .options{
+                    width: 80%;
+                    height: 200px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .option-box{
+                        cursor: pointer;
+                        transition: .2s all;
+                        width: 275px;
+                        height: 100px;
+                        border: 1px solid gray;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        font-size: 1.4rem;
+                        &:hover{
+                            color: #fff;
+                            background: rgb(202, 0, 0);
+                        }
+                    }
+                }
+               
+            }
+    }
+}
