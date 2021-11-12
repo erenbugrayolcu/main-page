@@ -111,7 +111,6 @@ html .container .header .navbar ul span, body .container .header .navbar ul span
 
 html .container .header .navbar ul span:hover, body .container .header .navbar ul span:hover {
   background: #ca0000;
-  color: #fff;
   border: none;
 }
 
@@ -193,7 +192,7 @@ html .container .header .header-info button:hover, body .container .header .head
 
 html .container .main, body .container .main {
   width: 100%;
-  height: 1000px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,7 +303,7 @@ html .container .main .vehicles .menu .navbar ul a li, body .container .main .ve
 }
 
 html .container .main .vehicles .cars, body .container .main .vehicles .cars {
-  width: 80%;
+  width: 70%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,7 +360,7 @@ html .container .main .vehicles .cars .car-top .car-info:hover img, body .contai
 }
 
 html .container .main .vehicles .cars .car-top .car-info img, body .container .main .vehicles .cars .car-top .car-info img {
-  width: 200px;
+  width: 180px;
   height: 125px;
   margin-top: 10px;
   -webkit-transition: .3s all;
@@ -440,7 +439,7 @@ html .container .main .vehicles .cars .car-bot .car-info:hover img, body .contai
 }
 
 html .container .main .vehicles .cars .car-bot .car-info img, body .container .main .vehicles .cars .car-bot .car-info img {
-  width: 200px;
+  width: 180px;
   height: 125px;
   margin-top: 10px;
   -webkit-transition: .3s all;
@@ -485,6 +484,7 @@ html .container .main .options, body .container .main .options {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 100px 0;
 }
 
 html .container .main .options .option-box, body .container .main .options .option-box {
@@ -493,7 +493,7 @@ html .container .main .options .option-box, body .container .main .options .opti
   transition: .2s all;
   width: 275px;
   height: 100px;
-  border: 1px solid gray;
+  border: 1px solid #cccccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,5 +513,768 @@ html .container .main .options .option-box, body .container .main .options .opti
 html .container .main .options .option-box:hover, body .container .main .options .option-box:hover {
   color: #fff;
   background: #ca0000;
+}
+
+html .container .main .frontier, body .container .main .frontier {
+  width: 100%;
+  height: 550px;
+  background-image: url(all-new-frontier.jpg);
+  background-size: cover;
+  background-position-y: -250px;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+}
+
+html .container .main .frontier .text, body .container .main .frontier .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 100px;
+}
+
+html .container .main .frontier .text p, body .container .main .frontier .text p {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+html .container .main .frontier .text .first, body .container .main .frontier .text .first {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #ca0000;
+  color: #fff;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+html .container .main .frontier .text .first:hover, body .container .main .frontier .text .first:hover {
+  background: #7c0000;
+}
+
+html .container .main .frontier .text .second, body .container .main .frontier .text .second {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #000;
+  color: #fff;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  cursor: pointer;
+}
+
+html .container .main .frontier .text .second:hover, body .container .main .frontier .text .second:hover {
+  background: #535353;
+}
+
+html .container .main .three-section, body .container .main .three-section {
+  width: 74%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .main .three-section .content, body .container .main .three-section .content {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .three-section .content .foto, body .container .main .three-section .content .foto {
+  width: 100%;
+  height: 65%;
+  background-image: url(1.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section .content .foto h5, body .container .main .three-section .content .foto h5 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+html .container .main .three-section .content .foto2, body .container .main .three-section .content .foto2 {
+  width: 100%;
+  height: 65%;
+  background-image: url(2.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section .content .foto2 h5, body .container .main .three-section .content .foto2 h5 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+html .container .main .three-section .content .foto3, body .container .main .three-section .content .foto3 {
+  width: 100%;
+  height: 65%;
+  background-image: url(3.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section .content .foto3 h5, body .container .main .three-section .content .foto3 h5 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+html .container .main .three-section .content .text, body .container .main .three-section .content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+html .container .main .three-section .content .text h4, body .container .main .three-section .content .text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section .content .text p, body .container .main .three-section .content .text p {
+  font-size: 0.9rem;
+}
+
+html .container .main .three-section .content button, body .container .main .three-section .content button {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  cursor: pointer;
+}
+
+html .container .main .three-section .content button:hover, body .container .main .three-section .content button:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .three-section .content .but2, body .container .main .three-section .content .but2 {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+html .container .main .three-section .content .but2:hover, body .container .main .three-section .content .but2:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .three-section .content .but3, body .container .main .three-section .content .but3 {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+html .container .main .three-section .content .but3:hover, body .container .main .three-section .content .but3:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .catolog, body .container .main .catolog {
+  width: 100%;
+  height: 910px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(#fff));
+  background: linear-gradient(to bottom, #ececec, #fff);
+}
+
+html .container .main .catolog .top, body .container .main .catolog .top {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 175px;
+}
+
+html .container .main .catolog .top .left, body .container .main .catolog .top .left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .catolog .top .left .content, body .container .main .catolog .top .left .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main .catolog .top .left .content .title, body .container .main .catolog .top .left .content .title {
+  font-size: 1.5rem;
+}
+
+html .container .main .catolog .top .left .content .desc, body .container .main .catolog .top .left .content .desc {
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+html .container .main .catolog .top .left .content button, body .container .main .catolog .top .left .content button {
+  width: 275px;
+  text-align: left;
+  padding-left: 30px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #000;
+  color: #fff;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  cursor: pointer;
+}
+
+html .container .main .catolog .top .left .content button:hover, body .container .main .catolog .top .left .content button:hover {
+  background: #303030;
+}
+
+html .container .main .catolog .top .right, body .container .main .catolog .top .right {
+  width: 40%;
+  height: 60%;
+  margin-top: 75px;
+}
+
+html .container .main .catolog .bot, body .container .main .catolog .bot {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .main .catolog .bot .left, body .container .main .catolog .bot .left {
+  width: 50%;
+  height: 100%;
+}
+
+html .container .main .catolog .bot .left .content img, body .container .main .catolog .bot .left .content img {
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  margin: 0 125px;
+}
+
+html .container .main .catolog .bot .left .content h4, html .container .main .catolog .bot .left .content p, html .container .main .catolog .bot .left .content button, body .container .main .catolog .bot .left .content h4, body .container .main .catolog .bot .left .content p, body .container .main .catolog .bot .left .content button {
+  margin-left: 125px;
+}
+
+html .container .main .catolog .bot .left .content p, body .container .main .catolog .bot .left .content p {
+  font-size: 1.2rem;
+}
+
+html .container .main .catolog .bot .left .content button, body .container .main .catolog .bot .left .content button {
+  width: 125px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #fff;
+  color: #000;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+html .container .main .catolog .bot .left .content button:hover, body .container .main .catolog .bot .left .content button:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .catolog .bot .right, body .container .main .catolog .bot .right {
+  width: 50%;
+  height: 100%;
+}
+
+html .container .main .catolog .bot .right .content img, body .container .main .catolog .bot .right .content img {
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  margin: 0 25px;
+}
+
+html .container .main .catolog .bot .right .content h4, html .container .main .catolog .bot .right .content p, html .container .main .catolog .bot .right .content button, body .container .main .catolog .bot .right .content h4, body .container .main .catolog .bot .right .content p, body .container .main .catolog .bot .right .content button {
+  margin-left: 25px;
+}
+
+html .container .main .catolog .bot .right .content p, body .container .main .catolog .bot .right .content p {
+  font-size: 1.2rem;
+}
+
+html .container .main .catolog .bot .right .content button, body .container .main .catolog .bot .right .content button {
+  width: 125px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #fff;
+  color: #000;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+html .container .main .catolog .bot .right .content button:hover, body .container .main .catolog .bot .right .content button:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .title, body .container .main .title {
+  width: 83%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 3px solid #000;
+}
+
+html .container .main .title p, body .container .main .title p {
+  font-size: 2.5rem;
+}
+
+html .container .main .three-section-bottom, body .container .main .three-section-bottom {
+  padding-top: 30px;
+  width: 83%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .main .three-section-bottom .content, body .container .main .three-section-bottom .content {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .main .three-section-bottom .content .foto, body .container .main .three-section-bottom .content .foto {
+  width: 100%;
+  height: 40%;
+  background-image: url(4.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section-bottom .content .foto h5, body .container .main .three-section-bottom .content .foto h5 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+html .container .main .three-section-bottom .content .foto2, body .container .main .three-section-bottom .content .foto2 {
+  width: 100%;
+  height: 40%;
+  background-image: url(5.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section-bottom .content .foto2 h5, body .container .main .three-section-bottom .content .foto2 h5 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+html .container .main .three-section-bottom .content .foto3, body .container .main .three-section-bottom .content .foto3 {
+  width: 100%;
+  height: 40%;
+  background-image: url(6.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section-bottom .content .foto3 h5, body .container .main .three-section-bottom .content .foto3 h5 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+html .container .main .three-section-bottom .content .text, body .container .main .three-section-bottom .content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+html .container .main .three-section-bottom .content .text h4, body .container .main .three-section-bottom .content .text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+html .container .main .three-section-bottom .content .text p, body .container .main .three-section-bottom .content .text p {
+  font-size: 0.9rem;
+}
+
+html .container .main .three-section-bottom .content button, body .container .main .three-section-bottom .content button {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+html .container .main .three-section-bottom .content button:hover, body .container .main .three-section-bottom .content button:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .three-section-bottom .content .but2, body .container .main .three-section-bottom .content .but2 {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+html .container .main .three-section-bottom .content .but2:hover, body .container .main .three-section-bottom .content .but2:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .three-section-bottom .content .but3, body .container .main .three-section-bottom .content .but3 {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+html .container .main .three-section-bottom .content .but3:hover, body .container .main .three-section-bottom .content .but3:hover {
+  background: #000;
+  color: #fff;
+}
+
+html .container .main .newsletter, body .container .main .newsletter {
+  width: 100%;
+  height: 200px;
+  background: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main .newsletter h2, body .container .main .newsletter h2 {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+html .container .main .newsletter button, body .container .main .newsletter button {
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 50px;
+  background: #ca0000;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+html .container .main .newsletter button:hover, body .container .main .newsletter button:hover {
+  background: #7c0000;
+}
+
+html footer, body footer {
+  width: 100%;
+  height: 550px;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html footer .navs, body footer .navs {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html footer .navs .list, body footer .navs .list {
+  width: 100%;
+  height: 80%;
+  padding-left: 125px;
+  padding-top: 30px;
+}
+
+html footer .navs .list ul, body footer .navs .list ul {
+  color: #fff;
+}
+
+html footer .navs .list ul li, body footer .navs .list ul li {
+  list-style-type: none;
+  margin-top: 7px;
+}
+
+html footer .navs .list ul li a, body footer .navs .list ul li a {
+  color: #acacac;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+html footer .navs .list ul li a:hover, body footer .navs .list ul li a:hover {
+  text-decoration: underline;
+}
+
+html .socials, body .socials {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+}
+
+html .socials h3, body .socials h3 {
+  margin-left: 125px;
+}
+
+html .socials .icons, body .socials .icons {
+  font-size: 2rem;
+  margin-left: 125px;
+}
+
+html .socials .icons a, body .socials .icons a {
+  color: gray;
+}
+
+html .socials .icons a:hover, body .socials .icons a:hover {
+  color: #fff;
+}
+
+html .copyright, body .copyright {
+  width: 100%;
+  height: 100px;
+  margin-top: -75px;
+}
+
+html .copyright ul, body .copyright ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .copyright ul li, body .copyright ul li {
+  list-style-type: none;
+  margin: 0 20px;
+}
+
+html .copyright ul li a, body .copyright ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+html .copyright ul li a:hover, body .copyright ul li a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
