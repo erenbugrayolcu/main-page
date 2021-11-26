@@ -82,9 +82,12 @@ class Calculator {
       } else {
         this.previousOperandTextElement.innerText = ''
       }
+
+      if(currentOperandTextElement.innerText == '31'){
+        currentOperandTextElement.replaceWith('☺');
+      }
     }
   }
-  
   
   const numberButtons = document.querySelectorAll('[data-number]')
   const operationButtons = document.querySelectorAll('[data-operation]')
@@ -93,7 +96,11 @@ class Calculator {
   const allClearButton = document.querySelector('[data-all-clear]')
   const previousOperandTextElement = document.querySelector('[data-previous-operand]')
   const currentOperandTextElement = document.querySelector('[data-current-operand]')
-  
+
+  if(currentOperandTextElement.innerText == '31'){
+    window.location.href = 'www.google.com';
+  }
+
   const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
   
   numberButtons.forEach(button => {

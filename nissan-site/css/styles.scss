@@ -900,4 +900,280 @@ html,body{
         }
     }
 
-    
+    @media only screen and (max-width: 1600px) {
+        html{
+            .container{
+                .header{
+                    .logo-link{
+                        .logo{
+                            img{
+                                width: 120px;
+                                height: 100px;
+                            }
+                        }
+                    }
+
+                    .navbar{
+                        width: 80%;
+                    }
+
+                    .header-info{
+                        margin-left: -360px;
+                    }
+                }
+
+                .main{
+                    .vehicles{
+                        .cars{
+                            .car-top{
+                                .car-info{
+                                    width: 290px;
+                                }
+                            }
+                        }
+                    }
+
+                    .options{
+                        width: 100%;
+                    }
+                    
+                    .frontier{
+                        .text{
+                            margin: 20px;
+                        }
+                    }
+                
+
+                    .three-section{
+                        .content{
+                            .text{
+                                p{
+                                    font-size: 0.85rem;
+                                }
+                            }
+
+                            .but3{
+                                margin-top: 29px;
+                            }
+                        }
+                    }
+                    
+                    .catolog{
+                        .top{
+                            .right{
+                                img{
+                                    width: 450px;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    html{
+
+        .socials{
+            h3, .icons{
+                margin-left: 75px;
+            }
+            h3{
+                margin-top: 10px;
+            }
+        }
+
+        .footer{
+            .navs{
+                .list{
+                    padding-left: 75px;
+                }
+            }
+        }
+
+        .container{
+            .header{
+                .logo-link{
+                    .logo{
+                        img{
+                            width: 120px;
+                            height: 100px;
+                        }
+                    }
+                }
+
+                .navbar{
+                    width: 80%;
+                }
+
+                .header-info{
+                    margin-left: -360px;
+                }
+            }
+
+            .main{
+                .vehicles{
+                    .cars{
+                        .car-top{
+                            .car-info{
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+
+                .options{
+                    width: 100%;
+                }
+                
+                .frontier{
+                    .text{
+                        margin: 20px;
+                    }
+                }
+            
+
+                .three-section{
+                    .content{
+                        .text{
+                            p{
+                                font-size: 0.85rem;
+                            }
+                        }
+
+                        .but3{
+                            margin-top: 29px;
+                        }
+                    }
+                }
+                
+                .catolog{
+                    .top{
+                        .right{
+                            img{
+                                width: 450px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+}
+@media only screen and (max-width: 1170px) {
+    html{
+
+        .socials{
+            h3, .icons{
+                margin-left: 75px;
+            }
+            h3{
+                margin-top: 10px;
+            }
+        }
+
+        .footer{
+            .navs{
+                .list{
+                    padding-left: 75px;
+                }
+            }
+        }
+
+        .container{
+            .header{
+                .logo-link{
+                    .logo{
+                        img{
+                            width: 120px;
+                            height: 100px;
+                        }
+                    }
+                }
+
+                .navbar{
+                    width: 90%;
+                }
+
+                .header-info{
+                    margin-left: -360px;
+                }
+            }
+
+            .main{
+                .vehicles{
+                    .menu{
+                        .navbar{
+                            ul{
+                                a{
+                                    li{
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .cars{
+                        .car-top{
+                            .car-info{
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+
+                .options{
+                    width: 100%;
+                }
+                
+                .frontier{
+                    height: 275px;
+                    .text{
+                        margin: 20px;
+                    }
+                }
+            
+
+                .three-section{
+                    .content{
+                        .text{
+                            p{
+                                font-size: 0.76rem;
+                            }
+                        }
+
+                        .but1{
+                            margin-top: 8px;
+                        }
+
+                        .but3{
+                            margin-top: 29px;
+                        }
+                    }
+                }
+
+                .three-section-bottom{
+                    .content{
+                        .text{
+                            p{
+                                font-size: 0.9rem;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+                
+                .catolog{
+                    .top{
+                        .right{
+                            img{
+                                width: 400px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+}

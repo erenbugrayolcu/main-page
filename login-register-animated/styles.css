@@ -1,0 +1,189 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html section.active, body section.active {
+  background: #000130;
+}
+
+html section, body section {
+  position: relative;
+  min-height: 100vh;
+  background: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+html section .container.active .signupBx, body section .container.active .signupBx {
+  pointer-events: initial;
+}
+
+html section .container.active .signupBx .formBx, body section .container.active .signupBx .formBx {
+  top: 0;
+}
+
+html section .container.active .signupBx .imgBx, body section .container.active .signupBx .imgBx {
+  top: 0;
+}
+
+html section .container.active .signinBx .formBx, body section .container.active .signinBx .formBx {
+  top: 100%;
+}
+
+html section .container.active .signinBx .imgBx, body section .container.active .signinBx .imgBx {
+  top: -100%;
+}
+
+html section .container, body section .container {
+  position: relative;
+  width: 800px;
+  height: 650px;
+  background: #fff;
+  -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+html section .container .signinBx .formBx, body section .container .signinBx .formBx {
+  top: 0;
+}
+
+html section .container .signinBx .imgBx, body section .container .signinBx .imgBx {
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html section .container .signupBx, body section .container .signupBx {
+  pointer-events: none;
+}
+
+html section .container .signupBx .formBx, body section .container .signupBx .formBx {
+  top: 100%;
+}
+
+html section .container .signupBx .imgBx, body section .container .signupBx .imgBx {
+  top: -100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html section .container .user, body section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html section .container .user .imgBx, body section .container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+html section .container .user .imgBx img, body section .container .user .imgBx img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html section .container .user .formBx, body section .container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html section .container .user .formBx h2, body section .container .user .formBx h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+html section .container .user .formBx input, body section .container .user .formBx input {
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+html section .container .user .formBx input[type="submit"], body section .container .user .formBx input[type="submit"] {
+  max-width: 100px;
+  background: blueviolet;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+html section .container .user .formBx .signUp, body section .container .user .formBx .signUp {
+  position: relative;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+html section .container .user .formBx .signUp a, body section .container .user .formBx .signUp a {
+  font-weight: 600;
+  text-decoration: none;
+  color: blueviolet;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1277,4 +1277,128 @@ html .copyright ul li a, body .copyright ul li a {
 html .copyright ul li a:hover, body .copyright ul li a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 1600px) {
+  html .container .header .logo-link .logo img {
+    width: 120px;
+    height: 100px;
+  }
+  html .container .header .navbar {
+    width: 80%;
+  }
+  html .container .header .header-info {
+    margin-left: -360px;
+  }
+  html .container .main .vehicles .cars .car-top .car-info {
+    width: 290px;
+  }
+  html .container .main .options {
+    width: 100%;
+  }
+  html .container .main .frontier .text {
+    margin: 20px;
+  }
+  html .container .main .three-section .content .text p {
+    font-size: 0.85rem;
+  }
+  html .container .main .three-section .content .but3 {
+    margin-top: 29px;
+  }
+  html .container .main .catolog .top .right img {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  html .socials h3, html .socials .icons {
+    margin-left: 75px;
+  }
+  html .socials h3 {
+    margin-top: 10px;
+  }
+  html .footer .navs .list {
+    padding-left: 75px;
+  }
+  html .container .header .logo-link .logo img {
+    width: 120px;
+    height: 100px;
+  }
+  html .container .header .navbar {
+    width: 80%;
+  }
+  html .container .header .header-info {
+    margin-left: -360px;
+  }
+  html .container .main .vehicles .cars .car-top .car-info {
+    width: 250px;
+  }
+  html .container .main .options {
+    width: 100%;
+  }
+  html .container .main .frontier .text {
+    margin: 20px;
+  }
+  html .container .main .three-section .content .text p {
+    font-size: 0.85rem;
+  }
+  html .container .main .three-section .content .but3 {
+    margin-top: 29px;
+  }
+  html .container .main .catolog .top .right img {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  html .socials h3, html .socials .icons {
+    margin-left: 75px;
+  }
+  html .socials h3 {
+    margin-top: 10px;
+  }
+  html .footer .navs .list {
+    padding-left: 75px;
+  }
+  html .container .header .logo-link .logo img {
+    width: 120px;
+    height: 100px;
+  }
+  html .container .header .navbar {
+    width: 90%;
+  }
+  html .container .header .header-info {
+    margin-left: -360px;
+  }
+  html .container .main .vehicles .menu .navbar ul a li {
+    text-align: center;
+  }
+  html .container .main .vehicles .cars .car-top .car-info {
+    width: 200px;
+  }
+  html .container .main .options {
+    width: 100%;
+  }
+  html .container .main .frontier {
+    height: 275px;
+  }
+  html .container .main .frontier .text {
+    margin: 20px;
+  }
+  html .container .main .three-section .content .text p {
+    font-size: 0.76rem;
+  }
+  html .container .main .three-section .content .but1 {
+    margin-top: 8px;
+  }
+  html .container .main .three-section .content .but3 {
+    margin-top: 29px;
+  }
+  html .container .main .three-section-bottom .content .text p {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  html .container .main .catolog .top .right img {
+    width: 400px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
