@@ -97,10 +97,6 @@ class Calculator {
   const previousOperandTextElement = document.querySelector('[data-previous-operand]')
   const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
-  if(currentOperandTextElement.innerText == '31'){
-    window.location.href = 'www.google.com';
-  }
-
   const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
   
   numberButtons.forEach(button => {

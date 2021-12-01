@@ -1,0 +1,724 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: arial;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html .container, body .container {
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+
+html .container .header, body .container .header {
+  width: 100%;
+  height: 12%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .header .logo, body .container .header .logo {
+  width: 150px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 45px;
+}
+
+html .container .header .logo img, body .container .header .logo img {
+  width: 100%;
+}
+
+html .container .header ul, body .container .header ul {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .header ul li, body .container .header ul li {
+  margin: 40px;
+  list-style: none;
+}
+
+html .container .header ul a, body .container .header ul a {
+  color: #2082C5;
+  text-decoration: none;
+}
+
+html .container .header .searchBar, body .container .header .searchBar {
+  width: 19%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: #C5CDDA;
+  margin-left: 30px;
+}
+
+html .container .header .searchBar .search, body .container .header .searchBar .search {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #C5CDDA;
+  outline: none;
+  padding: 20px;
+}
+
+html .container .header .searchBar a, body .container .header .searchBar a {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 260px;
+  color: #C5CDDA;
+  text-decoration: none;
+  padding: 17px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+html .container .header .onlineBox a, body .container .header .onlineBox a {
+  width: 100%;
+  height: 48px;
+  background: #FFD300;
+  border-radius: 5px;
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+html .container .header .onlineBox i, body .container .header .onlineBox i {
+  font-size: 25px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  color: #ACB7C9;
+}
+
+html .container .header .onlineBox .text h5, body .container .header .onlineBox .text h5 {
+  color: #134FAE;
+}
+
+html .container .header .onlineBox .text p, body .container .header .onlineBox .text p {
+  font-size: 10px;
+  color: #718368;
+}
+
+html .container .main, body .container .main {
+  width: 100%;
+  height: 611px;
+  background: -webkit-gradient(linear, left top, right top, from(#010426), to(#202F5A));
+  background: linear-gradient(to right, #010426, #202F5A);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main h1, body .container .main h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin: 30px 60px;
+}
+
+html .container .main .boxes, body .container .main .boxes {
+  width: 91%;
+  height: 80%;
+  margin: 0 60px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .container .main .boxes .loginPage, body .container .main .boxes .loginPage {
+  background: #fff;
+  height: 460px;
+  width: 77%;
+  border-radius: 10px;
+}
+
+html .container .main .boxes .loginPage .tabs, body .container .main .boxes .loginPage .tabs {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .main .boxes .loginPage .tabs .left-tab, body .container .main .boxes .loginPage .tabs .left-tab {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom: 4px solid #134fae;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+}
+
+html .container .main .boxes .loginPage .tabs .left-tab .giris, body .container .main .boxes .loginPage .tabs .left-tab .giris {
+  color: #134fae;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+html .container .main .boxes .loginPage .tabs .left-tab .girisyap, body .container .main .boxes .loginPage .tabs .left-tab .girisyap {
+  font-size: 14px;
+  color: #8a9ab4;
+  line-height: 22px;
+}
+
+html .container .main .boxes .loginPage .tabs .right-tab, body .container .main .boxes .loginPage .tabs .right-tab {
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+}
+
+html .container .main .boxes .loginPage .tabs .right-tab .giris, body .container .main .boxes .loginPage .tabs .right-tab .giris {
+  color: #8a9ab4;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+html .container .main .boxes .loginPage .tabs .right-tab .girisyap, body .container .main .boxes .loginPage .tabs .right-tab .girisyap {
+  font-size: 14px;
+  color: #c7ccd5;
+  line-height: 22px;
+}
+
+html .container .main .boxes .loginPage .content, body .container .main .boxes .loginPage .content {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu, body .container .main .boxes .loginPage .content .leftMenu {
+  width: 50%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu .leftContent, body .container .main .boxes .loginPage .content .leftMenu .leftContent {
+  height: 200px;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu .leftContent p, body .container .main .boxes .loginPage .content .leftMenu .leftContent p {
+  size: 18px;
+  line-height: 28px;
+  margin-top: -15px;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar, body .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar {
+  width: 303px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: #C5CDDA;
+  margin-top: 20px;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar .search, body .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar .search {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #C5CDDA;
+  outline: none;
+  padding: 20px;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar a, body .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar a {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 260px;
+  color: #C5CDDA;
+  text-decoration: none;
+  padding: 17px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a, body .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a {
+  width: 192px;
+  height: 48px;
+  background: #FFD300;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+html .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a p, body .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a p {
+  color: #134fae;
+  margin-top: 0px;
+}
+
+html .container .main .boxes .loginPage .content .rightMenu, body .container .main .boxes .loginPage .content .rightMenu {
+  width: 50%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main .boxes .loginPage .content .rightMenu .rightContent, body .container .main .boxes .loginPage .content .rightMenu .rightContent {
+  height: 200px;
+}
+
+html .container .main .boxes .loginPage .content .rightMenu .rightContent h3, body .container .main .boxes .loginPage .content .rightMenu .rightContent h3 {
+  size: 18px;
+  line-height: 28px;
+  color: #8a9ab4;
+}
+
+html .container .main .boxes .loginPage .content .rightMenu .rightContent p, body .container .main .boxes .loginPage .content .rightMenu .rightContent p {
+  size: 18px;
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+html .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a, body .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a {
+  width: 192px;
+  height: 48px;
+  background: #134fae;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+html .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a p, body .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a p {
+  color: #fff;
+  margin-top: 0px;
+}
+
+html .container .main .boxes .popups, body .container .main .boxes .popups {
+  width: 303px;
+  height: 460px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .container .main .boxes .popups .top, body .container .main .boxes .popups .top {
+  width: 100%;
+  height: 20%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+html .container .main .boxes .popups .top .otobilim p, body .container .main .boxes .popups .top .otobilim p {
+  font-size: 20px;
+  line-height: 38px;
+}
+
+html .container .main .boxes .popups .top .otobilim a, body .container .main .boxes .popups .top .otobilim a {
+  text-decoration: none;
+  color: #134fae;
+  line-height: 38px;
+}
+
+html .container .main .boxes .popups .bot, body .container .main .boxes .popups .bot {
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main .boxes .popups .bot .mobileBox, body .container .main .boxes .popups .bot .mobileBox {
+  background: #fff;
+  height: 160px;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .main .boxes .popups .bot .mobileBox .opetMobil, body .container .main .boxes .popups .bot .mobileBox .opetMobil {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+html .container .main .boxes .popups .bot .mobileBox .mobil, body .container .main .boxes .popups .bot .mobileBox .mobil {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 15px;
+  line-height: 24px;
+}
+
+html .container .main .boxes .popups .bot .mobileBox .yukle, body .container .main .boxes .popups .bot .mobileBox .yukle {
+  text-decoration: none;
+  color: #134fae;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+html .container .info, body .container .info {
+  width: 100%;
+  height: 552px;
+  background: #134fae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .info .infoTop, body .container .info .infoTop {
+  width: 90%;
+  height: 140px;
+  border-bottom: 1px solid #fff;
+}
+
+html .container .info .infoTop .opetno, body .container .info .infoTop .opetno {
+  margin-top: 35px;
+}
+
+html .container .info .infoTop .logos, body .container .info .infoTop .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 950px;
+  margin-top: -65px;
+}
+
+html .container .info .infoTop .logos img, body .container .info .infoTop .logos img {
+  margin-left: 50px;
+}
+
+html .container .info .infoBot, body .container .info .infoBot {
+  width: 100%;
+  height: 412px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+html .container .info .infoBot .infoOpet, body .container .info .infoBot .infoOpet {
+  width: 45%;
+  height: 100%;
+  margin-left: 80px;
+}
+
+html .container .info .infoBot .infoOpet p, body .container .info .infoBot .infoOpet p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+html .container .info .infoBot .infoOpet .lists, body .container .info .infoBot .infoOpet .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .info .infoBot .infoOpet .lists ul, body .container .info .infoBot .infoOpet .lists ul {
+  margin-top: 40px;
+}
+
+html .container .info .infoBot .infoOpet .lists ul li, body .container .info .infoBot .infoOpet .lists ul li {
+  line-height: 60px;
+  list-style: none;
+}
+
+html .container .info .infoBot .infoOpet .lists ul li a, body .container .info .infoBot .infoOpet .lists ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+html .container .info .infoBot .infoOpet .lists ul li a:hover, body .container .info .infoBot .infoOpet .lists ul li a:hover {
+  text-decoration: underline;
+}
+
+html .container .info .infoBot .infoOpet .lists .list, body .container .info .infoBot .infoOpet .lists .list {
+  margin-left: 130px;
+}
+
+html .container .info .infoBot .menu, body .container .info .infoBot .menu {
+  width: 23%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .info .infoBot .menu ul li, body .container .info .infoBot .menu ul li {
+  list-style: none;
+  font-size: 20px;
+  margin-left: 50px;
+  line-height: 75px;
+}
+
+html .container .info .infoBot .menu ul li a, body .container .info .infoBot .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+html .container .info .infoBot .menu ul li a:hover, body .container .info .infoBot .menu ul li a:hover {
+  text-decoration: underline;
+}
+
+html .container .info .infoBot .download, body .container .info .infoBot .download {
+  width: 21%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html .container .info .infoBot .download .downloadText, body .container .info .infoBot .download .downloadText {
+  margin-top: 40px;
+  color: #c7ccd5;
+  line-height: 22px;
+}
+
+html .container .info .infoBot .download .apps, body .container .info .infoBot .download .apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+}
+
+html .container .info .infoBot .download .apps img, body .container .info .infoBot .download .apps img {
+  padding: 5px 0;
+}
+
+html .container .footer, body .container .footer {
+  width: 100%;
+  height: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .container .footer .koc, body .container .footer .koc {
+  width: 75px;
+  height: 25px;
+  margin: 45px;
+}
+
+html .container .footer .copyrights ul, body .container .footer .copyrights ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 840px;
+  height: 15%;
+  margin-top: 45px;
+  margin-left: -30px;
+}
+
+html .container .footer .copyrights ul li, body .container .footer .copyrights ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+}
+
+html .container .footer .copyrights ul li a, body .container .footer .copyrights ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+}
+
+html .container .footer .copyrights ul li a:hover, body .container .footer .copyrights ul li a:hover {
+  text-decoration: underline;
+}
+
+html .container .footer .copyrights .copyText, body .container .footer .copyrights .copyText {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+html .container .footer .icons, body .container .footer .icons {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  margin-left: 355px;
+}
+
+html .container .footer .icons a, body .container .footer .icons a {
+  color: #000;
+  text-decoration: none;
+}
+
+html .container .footer .icons a i, body .container .footer .icons a i {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */
