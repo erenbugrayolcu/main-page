@@ -11,13 +11,13 @@ html, body {
   height: 100%;
 }
 
-html .container, body .container {
+html .containerr, body .containerr {
   width: 100%;
   height: 100%;
   background: gray;
 }
 
-html .container .header, body .container .header {
+html .containerr .header, body .containerr .header {
   width: 100%;
   height: 12%;
   background: #fff;
@@ -29,7 +29,7 @@ html .container .header, body .container .header {
           align-items: center;
 }
 
-html .container .header .logo, body .container .header .logo {
+html .containerr .header .logo, body .containerr .header .logo {
   width: 150px;
   height: 100px;
   display: -webkit-box;
@@ -41,11 +41,11 @@ html .container .header .logo, body .container .header .logo {
   margin: 0 45px;
 }
 
-html .container .header .logo img, body .container .header .logo img {
+html .containerr .header .logo img, body .containerr .header .logo img {
   width: 100%;
 }
 
-html .container .header ul, body .container .header ul {
+html .containerr .header ul, body .containerr .header ul {
   width: 50%;
   height: 100%;
   display: -webkit-box;
@@ -60,17 +60,17 @@ html .container .header ul, body .container .header ul {
           align-items: center;
 }
 
-html .container .header ul li, body .container .header ul li {
+html .containerr .header ul li, body .containerr .header ul li {
   margin: 40px;
   list-style: none;
 }
 
-html .container .header ul a, body .container .header ul a {
+html .containerr .header ul a, body .containerr .header ul a {
   color: #2082C5;
   text-decoration: none;
 }
 
-html .container .header .searchBar, body .container .header .searchBar {
+html .containerr .header .searchBar, body .containerr .header .searchBar {
   width: 19%;
   height: 48px;
   display: -webkit-box;
@@ -84,7 +84,7 @@ html .container .header .searchBar, body .container .header .searchBar {
   margin-left: 30px;
 }
 
-html .container .header .searchBar .search, body .container .header .searchBar .search {
+html .containerr .header .searchBar .search, body .containerr .header .searchBar .search {
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -93,7 +93,7 @@ html .container .header .searchBar .search, body .container .header .searchBar .
   padding: 20px;
 }
 
-html .container .header .searchBar a, body .container .header .searchBar a {
+html .containerr .header .searchBar a, body .containerr .header .searchBar a {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,7 +106,7 @@ html .container .header .searchBar a, body .container .header .searchBar a {
   border-bottom-right-radius: 5px;
 }
 
-html .container .header .onlineBox a, body .container .header .onlineBox a {
+html .containerr .header .onlineBox a, body .containerr .header .onlineBox a {
   width: 100%;
   height: 48px;
   background: #FFD300;
@@ -121,7 +121,7 @@ html .container .header .onlineBox a, body .container .header .onlineBox a {
   text-decoration: none;
 }
 
-html .container .header .onlineBox i, body .container .header .onlineBox i {
+html .containerr .header .onlineBox i, body .containerr .header .onlineBox i {
   font-size: 25px;
   background: #fff;
   border-radius: 50%;
@@ -129,16 +129,16 @@ html .container .header .onlineBox i, body .container .header .onlineBox i {
   color: #ACB7C9;
 }
 
-html .container .header .onlineBox .text h5, body .container .header .onlineBox .text h5 {
+html .containerr .header .onlineBox .text h5, body .containerr .header .onlineBox .text h5 {
   color: #134FAE;
 }
 
-html .container .header .onlineBox .text p, body .container .header .onlineBox .text p {
+html .containerr .header .onlineBox .text p, body .containerr .header .onlineBox .text p {
   font-size: 10px;
   color: #718368;
 }
 
-html .container .main, body .container .main {
+html .containerr .main, body .containerr .main {
   width: 100%;
   height: 611px;
   background: -webkit-gradient(linear, left top, right top, from(#010426), to(#202F5A));
@@ -152,13 +152,13 @@ html .container .main, body .container .main {
           flex-direction: column;
 }
 
-html .container .main h1, body .container .main h1 {
+html .containerr .main h1, body .containerr .main h1 {
   color: #fff;
   font-size: 2.4rem;
   margin: 30px 60px;
 }
 
-html .container .main .boxes, body .container .main .boxes {
+html .containerr .main .boxes, body .containerr .main .boxes {
   width: 91%;
   height: 80%;
   margin: 0 60px;
@@ -171,14 +171,14 @@ html .container .main .boxes, body .container .main .boxes {
           justify-content: space-between;
 }
 
-html .container .main .boxes .loginPage, body .container .main .boxes .loginPage {
+html .containerr .main .boxes .loginPage, body .containerr .main .boxes .loginPage {
   background: #fff;
   height: 460px;
   width: 77%;
   border-radius: 10px;
 }
 
-html .container .main .boxes .loginPage .tabs, body .container .main .boxes .loginPage .tabs {
+html .containerr .main .boxes .loginPage .tabs, body .containerr .main .boxes .loginPage .tabs {
   width: 100%;
   height: 20%;
   display: -webkit-box;
@@ -186,7 +186,7 @@ html .container .main .boxes .loginPage .tabs, body .container .main .boxes .log
   display: flex;
 }
 
-html .container .main .boxes .loginPage .tabs .left-tab, body .container .main .boxes .loginPage .tabs .left-tab {
+html .containerr .main .boxes .loginPage .tabs .left-tab, body .containerr .main .boxes .loginPage .tabs .left-tab {
   width: 50%;
   height: 100%;
   border-top-left-radius: 10px;
@@ -201,19 +201,19 @@ html .container .main .boxes .loginPage .tabs .left-tab, body .container .main .
   padding-left: 30px;
 }
 
-html .container .main .boxes .loginPage .tabs .left-tab .giris, body .container .main .boxes .loginPage .tabs .left-tab .giris {
+html .containerr .main .boxes .loginPage .tabs .left-tab .giris, body .containerr .main .boxes .loginPage .tabs .left-tab .giris {
   color: #134fae;
   font-size: 18px;
   line-height: 28px;
 }
 
-html .container .main .boxes .loginPage .tabs .left-tab .girisyap, body .container .main .boxes .loginPage .tabs .left-tab .girisyap {
+html .containerr .main .boxes .loginPage .tabs .left-tab .girisyap, body .containerr .main .boxes .loginPage .tabs .left-tab .girisyap {
   font-size: 14px;
   color: #8a9ab4;
   line-height: 22px;
 }
 
-html .container .main .boxes .loginPage .tabs .right-tab, body .container .main .boxes .loginPage .tabs .right-tab {
+html .containerr .main .boxes .loginPage .tabs .right-tab, body .containerr .main .boxes .loginPage .tabs .right-tab {
   width: 50%;
   height: 100%;
   border-top-right-radius: 10px;
@@ -228,19 +228,19 @@ html .container .main .boxes .loginPage .tabs .right-tab, body .container .main 
   padding-left: 30px;
 }
 
-html .container .main .boxes .loginPage .tabs .right-tab .giris, body .container .main .boxes .loginPage .tabs .right-tab .giris {
+html .containerr .main .boxes .loginPage .tabs .right-tab .giris, body .containerr .main .boxes .loginPage .tabs .right-tab .giris {
   color: #8a9ab4;
   font-size: 18px;
   line-height: 28px;
 }
 
-html .container .main .boxes .loginPage .tabs .right-tab .girisyap, body .container .main .boxes .loginPage .tabs .right-tab .girisyap {
+html .containerr .main .boxes .loginPage .tabs .right-tab .girisyap, body .containerr .main .boxes .loginPage .tabs .right-tab .girisyap {
   font-size: 14px;
   color: #c7ccd5;
   line-height: 22px;
 }
 
-html .container .main .boxes .loginPage .content, body .container .main .boxes .loginPage .content {
+html .containerr .main .boxes .loginPage .content, body .containerr .main .boxes .loginPage .content {
   width: 100%;
   height: 85%;
   display: -webkit-box;
@@ -248,7 +248,7 @@ html .container .main .boxes .loginPage .content, body .container .main .boxes .
   display: flex;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu, body .container .main .boxes .loginPage .content .leftMenu {
+html .containerr .main .boxes .loginPage .content .leftMenu, body .containerr .main .boxes .loginPage .content .leftMenu {
   width: 50%;
   height: 100%;
   border-bottom-left-radius: 10px;
@@ -267,17 +267,17 @@ html .container .main .boxes .loginPage .content .leftMenu, body .container .mai
           flex-direction: column;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu .leftContent, body .container .main .boxes .loginPage .content .leftMenu .leftContent {
+html .containerr .main .boxes .loginPage .content .leftMenu .leftContent, body .containerr .main .boxes .loginPage .content .leftMenu .leftContent {
   height: 200px;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu .leftContent p, body .container .main .boxes .loginPage .content .leftMenu .leftContent p {
+html .containerr .main .boxes .loginPage .content .leftMenu .leftContent p, body .containerr .main .boxes .loginPage .content .leftMenu .leftContent p {
   size: 18px;
   line-height: 28px;
   margin-top: -15px;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar, body .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar {
+html .containerr .main .boxes .loginPage .content .leftMenu .leftContent .searchBar, body .containerr .main .boxes .loginPage .content .leftMenu .leftContent .searchBar {
   width: 303px;
   height: 48px;
   display: -webkit-box;
@@ -291,7 +291,7 @@ html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchB
   margin-top: 20px;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar .search, body .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar .search {
+html .containerr .main .boxes .loginPage .content .leftMenu .leftContent .searchBar .search, body .containerr .main .boxes .loginPage .content .leftMenu .leftContent .searchBar .search {
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -300,7 +300,7 @@ html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchB
   padding: 20px;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar a, body .container .main .boxes .loginPage .content .leftMenu .leftContent .searchBar a {
+html .containerr .main .boxes .loginPage .content .leftMenu .leftContent .searchBar a, body .containerr .main .boxes .loginPage .content .leftMenu .leftContent .searchBar a {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,7 +313,7 @@ html .container .main .boxes .loginPage .content .leftMenu .leftContent .searchB
   border-bottom-right-radius: 5px;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a, body .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a {
+html .containerr .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a, body .containerr .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a {
   width: 192px;
   height: 48px;
   background: #FFD300;
@@ -331,12 +331,12 @@ html .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineB
   margin-top: 25px;
 }
 
-html .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a p, body .container .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a p {
+html .containerr .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a p, body .containerr .main .boxes .loginPage .content .leftMenu .leftContent .onlineBox a p {
   color: #134fae;
   margin-top: 0px;
 }
 
-html .container .main .boxes .loginPage .content .rightMenu, body .container .main .boxes .loginPage .content .rightMenu {
+html .containerr .main .boxes .loginPage .content .rightMenu, body .containerr .main .boxes .loginPage .content .rightMenu {
   width: 50%;
   height: 100%;
   border-bottom-left-radius: 10px;
@@ -355,23 +355,23 @@ html .container .main .boxes .loginPage .content .rightMenu, body .container .ma
           flex-direction: column;
 }
 
-html .container .main .boxes .loginPage .content .rightMenu .rightContent, body .container .main .boxes .loginPage .content .rightMenu .rightContent {
+html .containerr .main .boxes .loginPage .content .rightMenu .rightContent, body .containerr .main .boxes .loginPage .content .rightMenu .rightContent {
   height: 200px;
 }
 
-html .container .main .boxes .loginPage .content .rightMenu .rightContent h3, body .container .main .boxes .loginPage .content .rightMenu .rightContent h3 {
+html .containerr .main .boxes .loginPage .content .rightMenu .rightContent h3, body .containerr .main .boxes .loginPage .content .rightMenu .rightContent h3 {
   size: 18px;
   line-height: 28px;
   color: #8a9ab4;
 }
 
-html .container .main .boxes .loginPage .content .rightMenu .rightContent p, body .container .main .boxes .loginPage .content .rightMenu .rightContent p {
+html .containerr .main .boxes .loginPage .content .rightMenu .rightContent p, body .containerr .main .boxes .loginPage .content .rightMenu .rightContent p {
   size: 18px;
   line-height: 28px;
   margin-top: 15px;
 }
 
-html .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a, body .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a {
+html .containerr .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a, body .containerr .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a {
   width: 192px;
   height: 48px;
   background: #134fae;
@@ -389,12 +389,12 @@ html .container .main .boxes .loginPage .content .rightMenu .rightContent .onlin
   margin-top: 25px;
 }
 
-html .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a p, body .container .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a p {
+html .containerr .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a p, body .containerr .main .boxes .loginPage .content .rightMenu .rightContent .onlineBox a p {
   color: #fff;
   margin-top: 0px;
 }
 
-html .container .main .boxes .popups, body .container .main .boxes .popups {
+html .containerr .main .boxes .popups, body .containerr .main .boxes .popups {
   width: 303px;
   height: 460px;
   border-radius: 10px;
@@ -410,7 +410,7 @@ html .container .main .boxes .popups, body .container .main .boxes .popups {
           justify-content: space-between;
 }
 
-html .container .main .boxes .popups .top, body .container .main .boxes .popups .top {
+html .containerr .main .boxes .popups .top, body .containerr .main .boxes .popups .top {
   width: 100%;
   height: 20%;
   border-radius: 10px;
@@ -425,18 +425,18 @@ html .container .main .boxes .popups .top, body .container .main .boxes .popups 
   background: #fff;
 }
 
-html .container .main .boxes .popups .top .otobilim p, body .container .main .boxes .popups .top .otobilim p {
+html .containerr .main .boxes .popups .top .otobilim p, body .containerr .main .boxes .popups .top .otobilim p {
   font-size: 20px;
   line-height: 38px;
 }
 
-html .container .main .boxes .popups .top .otobilim a, body .container .main .boxes .popups .top .otobilim a {
+html .containerr .main .boxes .popups .top .otobilim a, body .containerr .main .boxes .popups .top .otobilim a {
   text-decoration: none;
   color: #134fae;
   line-height: 38px;
 }
 
-html .container .main .boxes .popups .bot, body .container .main .boxes .popups .bot {
+html .containerr .main .boxes .popups .bot, body .containerr .main .boxes .popups .bot {
   width: 100%;
   height: 340px;
   border-radius: 10px;
@@ -449,7 +449,7 @@ html .container .main .boxes .popups .bot, body .container .main .boxes .popups 
           flex-direction: column;
 }
 
-html .container .main .boxes .popups .bot .mobileBox, body .container .main .boxes .popups .bot .mobileBox {
+html .containerr .main .boxes .popups .bot .mobileBox, body .containerr .main .boxes .popups .bot .mobileBox {
   background: #fff;
   height: 160px;
   width: 100%;
@@ -464,27 +464,27 @@ html .container .main .boxes .popups .bot .mobileBox, body .container .main .box
           flex-direction: column;
 }
 
-html .container .main .boxes .popups .bot .mobileBox .opetMobil, body .container .main .boxes .popups .bot .mobileBox .opetMobil {
+html .containerr .main .boxes .popups .bot .mobileBox .opetMobil, body .containerr .main .boxes .popups .bot .mobileBox .opetMobil {
   font-size: 18px;
   margin-top: 15px;
   margin-left: 15px;
 }
 
-html .container .main .boxes .popups .bot .mobileBox .mobil, body .container .main .boxes .popups .bot .mobileBox .mobil {
+html .containerr .main .boxes .popups .bot .mobileBox .mobil, body .containerr .main .boxes .popups .bot .mobileBox .mobil {
   font-size: 16px;
   margin-top: 15px;
   margin-left: 15px;
   line-height: 24px;
 }
 
-html .container .main .boxes .popups .bot .mobileBox .yukle, body .container .main .boxes .popups .bot .mobileBox .yukle {
+html .containerr .main .boxes .popups .bot .mobileBox .yukle, body .containerr .main .boxes .popups .bot .mobileBox .yukle {
   text-decoration: none;
   color: #134fae;
   margin-left: 15px;
   margin-top: 15px;
 }
 
-html .container .info, body .container .info {
+html .containerr .info, body .containerr .info {
   width: 100%;
   height: 552px;
   background: #134fae;
@@ -503,17 +503,17 @@ html .container .info, body .container .info {
           align-items: center;
 }
 
-html .container .info .infoTop, body .container .info .infoTop {
+html .containerr .info .infoTop, body .containerr .info .infoTop {
   width: 90%;
   height: 140px;
   border-bottom: 1px solid #fff;
 }
 
-html .container .info .infoTop .opetno, body .container .info .infoTop .opetno {
+html .containerr .info .infoTop .opetno, body .containerr .info .infoTop .opetno {
   margin-top: 35px;
 }
 
-html .container .info .infoTop .logos, body .container .info .infoTop .logos {
+html .containerr .info .infoTop .logos, body .containerr .info .infoTop .logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,11 +525,11 @@ html .container .info .infoTop .logos, body .container .info .infoTop .logos {
   margin-top: -65px;
 }
 
-html .container .info .infoTop .logos img, body .container .info .infoTop .logos img {
+html .containerr .info .infoTop .logos img, body .containerr .info .infoTop .logos img {
   margin-left: 50px;
 }
 
-html .container .info .infoBot, body .container .info .infoBot {
+html .containerr .info .infoBot, body .containerr .info .infoBot {
   width: 100%;
   height: 412px;
   display: -webkit-box;
@@ -538,48 +538,49 @@ html .container .info .infoBot, body .container .info .infoBot {
   justify-items: center;
 }
 
-html .container .info .infoBot .infoOpet, body .container .info .infoBot .infoOpet {
+html .containerr .info .infoBot .infoOpet, body .containerr .info .infoBot .infoOpet {
   width: 45%;
   height: 100%;
   margin-left: 80px;
 }
 
-html .container .info .infoBot .infoOpet p, body .container .info .infoBot .infoOpet p {
+html .containerr .info .infoBot .infoOpet p, body .containerr .info .infoBot .infoOpet p {
   color: #fff;
   font-size: 20px;
   line-height: 30px;
   margin-top: 20px;
 }
 
-html .container .info .infoBot .infoOpet .lists, body .container .info .infoBot .infoOpet .lists {
+html .containerr .info .infoBot .infoOpet .lists, body .containerr .info .infoBot .infoOpet .lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-html .container .info .infoBot .infoOpet .lists ul, body .container .info .infoBot .infoOpet .lists ul {
+html .containerr .info .infoBot .infoOpet .lists ul, body .containerr .info .infoBot .infoOpet .lists ul {
   margin-top: 40px;
 }
 
-html .container .info .infoBot .infoOpet .lists ul li, body .container .info .infoBot .infoOpet .lists ul li {
-  line-height: 60px;
+html .containerr .info .infoBot .infoOpet .lists ul li, body .containerr .info .infoBot .infoOpet .lists ul li {
+  line-height: 40px;
   list-style: none;
+  font-size: 13px;
 }
 
-html .container .info .infoBot .infoOpet .lists ul li a, body .container .info .infoBot .infoOpet .lists ul li a {
+html .containerr .info .infoBot .infoOpet .lists ul li a, body .containerr .info .infoBot .infoOpet .lists ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-html .container .info .infoBot .infoOpet .lists ul li a:hover, body .container .info .infoBot .infoOpet .lists ul li a:hover {
+html .containerr .info .infoBot .infoOpet .lists ul li a:hover, body .containerr .info .infoBot .infoOpet .lists ul li a:hover {
   text-decoration: underline;
 }
 
-html .container .info .infoBot .infoOpet .lists .list, body .container .info .infoBot .infoOpet .lists .list {
+html .containerr .info .infoBot .infoOpet .lists .list, body .containerr .info .infoBot .infoOpet .lists .list {
   margin-left: 130px;
 }
 
-html .container .info .infoBot .menu, body .container .info .infoBot .menu {
+html .containerr .info .infoBot .menu, body .containerr .info .infoBot .menu {
   width: 23%;
   height: 100%;
   display: -webkit-box;
@@ -591,23 +592,23 @@ html .container .info .infoBot .menu, body .container .info .infoBot .menu {
           align-items: center;
 }
 
-html .container .info .infoBot .menu ul li, body .container .info .infoBot .menu ul li {
+html .containerr .info .infoBot .menu ul li, body .containerr .info .infoBot .menu ul li {
   list-style: none;
   font-size: 20px;
   margin-left: 50px;
-  line-height: 75px;
+  line-height: 60px;
 }
 
-html .container .info .infoBot .menu ul li a, body .container .info .infoBot .menu ul li a {
+html .containerr .info .infoBot .menu ul li a, body .containerr .info .infoBot .menu ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-html .container .info .infoBot .menu ul li a:hover, body .container .info .infoBot .menu ul li a:hover {
+html .containerr .info .infoBot .menu ul li a:hover, body .containerr .info .infoBot .menu ul li a:hover {
   text-decoration: underline;
 }
 
-html .container .info .infoBot .download, body .container .info .infoBot .download {
+html .containerr .info .infoBot .download, body .containerr .info .infoBot .download {
   width: 21%;
   height: 100%;
   display: -webkit-box;
@@ -620,13 +621,13 @@ html .container .info .infoBot .download, body .container .info .infoBot .downlo
           flex-direction: column;
 }
 
-html .container .info .infoBot .download .downloadText, body .container .info .infoBot .download .downloadText {
+html .containerr .info .infoBot .download .downloadText, body .containerr .info .infoBot .download .downloadText {
   margin-top: 40px;
   color: #c7ccd5;
   line-height: 22px;
 }
 
-html .container .info .infoBot .download .apps, body .container .info .infoBot .download .apps {
+html .containerr .info .infoBot .download .apps, body .containerr .info .infoBot .download .apps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,11 +638,11 @@ html .container .info .infoBot .download .apps, body .container .info .infoBot .
   margin-top: 40px;
 }
 
-html .container .info .infoBot .download .apps img, body .container .info .infoBot .download .apps img {
+html .containerr .info .infoBot .download .apps img, body .containerr .info .infoBot .download .apps img {
   padding: 5px 0;
 }
 
-html .container .footer, body .container .footer {
+html .containerr .footer, body .containerr .footer {
   width: 100%;
   height: 111px;
   display: -webkit-box;
@@ -649,13 +650,13 @@ html .container .footer, body .container .footer {
   display: flex;
 }
 
-html .container .footer .koc, body .container .footer .koc {
+html .containerr .footer .koc, body .containerr .footer .koc {
   width: 75px;
   height: 25px;
   margin: 45px;
 }
 
-html .container .footer .copyrights ul, body .container .footer .copyrights ul {
+html .containerr .footer .copyrights ul, body .containerr .footer .copyrights ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +666,7 @@ html .container .footer .copyrights ul, body .container .footer .copyrights ul {
   margin-left: -30px;
 }
 
-html .container .footer .copyrights ul li, body .container .footer .copyrights ul li {
+html .containerr .footer .copyrights ul li, body .containerr .footer .copyrights ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,22 +674,22 @@ html .container .footer .copyrights ul li, body .container .footer .copyrights u
   margin-left: 30px;
 }
 
-html .container .footer .copyrights ul li a, body .container .footer .copyrights ul li a {
+html .containerr .footer .copyrights ul li a, body .containerr .footer .copyrights ul li a {
   text-decoration: none;
   font-size: 14px;
   color: #000;
 }
 
-html .container .footer .copyrights ul li a:hover, body .container .footer .copyrights ul li a:hover {
+html .containerr .footer .copyrights ul li a:hover, body .containerr .footer .copyrights ul li a:hover {
   text-decoration: underline;
 }
 
-html .container .footer .copyrights .copyText, body .container .footer .copyrights .copyText {
+html .containerr .footer .copyrights .copyText, body .containerr .footer .copyrights .copyText {
   margin-top: 10px;
   font-size: 14px;
 }
 
-html .container .footer .icons, body .container .footer .icons {
+html .containerr .footer .icons, body .containerr .footer .icons {
   width: 100%;
   height: 100%;
   font-size: 25px;
@@ -706,12 +707,12 @@ html .container .footer .icons, body .container .footer .icons {
   margin-left: 355px;
 }
 
-html .container .footer .icons a, body .container .footer .icons a {
+html .containerr .footer .icons a, body .containerr .footer .icons a {
   color: #000;
   text-decoration: none;
 }
 
-html .container .footer .icons a i, body .container .footer .icons a i {
+html .containerr .footer .icons a i, body .containerr .footer .icons a i {
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
