@@ -16,6 +16,7 @@
    girisPlaceholder = document.getElementById('gsm')
    opetUyeText = document.getElementById('opet-uye-text')
    opetUyeText2 = document.getElementById('opet-uye-text2')
+   verify = document.getElementById('verification')
 
 
 function tab1(){
@@ -56,4 +57,6 @@ function girisYap(){
   opetUyeText2.style.display = "none"
   uyeButon.style.display = "none"
   gsm.value = "";
+  verify.style.display = "flex"
+  kayitBox.style.display = "none"
 }
