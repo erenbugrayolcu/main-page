@@ -1,6 +1,7 @@
 $mavi: #134fae;
-$sari: #E3CB25;
+$sari: yellow;
 $gri: #8a9ab4;
+$background: linear-gradient(to right,#010426, #202f5a);
 
 *{
     margin: 0;
@@ -13,9 +14,10 @@ $gri: #8a9ab4;
 
 html,body{
     width: 100%;
-    height: 1412px;
+    height: 1329px;
     display: flex;
     flex-direction: column;
+    background: $background;
 }
 
 @media (min-width: 375px),(max-width: 375px) {
@@ -34,6 +36,13 @@ html,body{
                 width: 89px;
                 height: 28px;
             }
+        }
+        .navbar-brand-pc{
+            display: none;
+        }
+
+        .header-right-pc{
+            display: none;
         }
 
         .header-right{
@@ -62,9 +71,15 @@ html,body{
         }
     }
     .main{
+        .tab-content {
+            display: none;
+          }
+          .tab-content.active {
+            display: block;
+          }
             width: 100%;
             height: 575px;
-            background: linear-gradient(to right,#010426, #202f5a);
+            background: $background;
 
             .bireysel{
                 color: #fff;
@@ -77,147 +92,329 @@ html,body{
                     text-align: left;
                 }
             }
-            
-            .uyelik{
-                width: 100%;
-                height: 65%;
-                background: #fff;
 
-                .giris-uyelik{
-                    width: 100%;
-                    height: 20%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    .giris{
-                        width: 50%;
-                        height: 100%;
-                        text-decoration: none;
-                        border-bottom: 4px solid $mavi;
-
-                        .giris-text-1{
-                            font-size: 18px;
-                            line-height: 28px;
-                            color: $mavi;
-                            margin-left: 16px;
-                            margin-top: 13px;
-                        }
-
-                        .giris-text-2{
-                            font-size: 14px;
-                            line-height: 22px;
-                            color: $mavi;
-                            margin-left: 16px;
-                        }
-                    }
-
-                    .kayit{
-                        width: 50%;
-                        height: 100%;
-                        text-decoration: none;
-                        border-bottom: 4px solid transparent;
-
-                        .kayit-text-1{
-                            font-size: 18px;
-                            line-height: 28px;
-                            color: $gri;
-                            margin-left: 16px;
-                            margin-top: 13px;
-                        }
-
-                        .kayit-text-2{
-                            font-size: 14px;
-                            line-height: 22px;
-                            color: $gri;
-                            margin-left: 16px;
-                        }
-                    }
+            .main-right{
+                .opet-mobil{
+                    display: none;
                 }
-                
-                .giris-content{
-                    display: flex;
+            }
+            
+            .boxes{
                     width: 100%;
-                    height: 80%;
-
-                    .giris-menu{
+                    height: 100%;
+                .uyelik{
+                    width: 100%;
+                    height: 65%;
+                    background: #fff;
+    
+                    .giris-uyelik{
                         width: 100%;
-                        height: 100%;
+                        height: 20%;
                         display: flex;
-                        justify-content: space-around;
-                        flex-direction: column;
+                        justify-content: center;
                         align-items: center;
-                        padding: 20px 0;
-
-                        .opet-giris-text{
-                            width: 95%;
-                            font-size: 18px;
-                            line-height: 28px;
-                        }
-
-                        .gsm{
-                            width: 95%;
-                            height: 48px;
-                            border-radius: 5px;
-                            border: 1px solid rgba(0,0,0,0.2);
-                            padding: 0 20px;
-                        }
-
-
-                        .giris-yap-buton{
-                            background: $sari;
-                            color: $mavi;
-                            border-radius: 5px;
-                            width: 95%;
-                            height: 48px;display: flex;
-                            justify-content: center;
-                            align-items: center;
+    
+                        .giris{
+                            width: 50%;
+                            height: 100%;
                             text-decoration: none;
-                            button{
+                            border-bottom: 4px solid $mavi;
+
+                            &:hover{
+                                p{
+                                    color: $mavi;
+                                }
+                            }
+    
+                            .giris-text-1{
+                                font-size: 18px;
+                                line-height: 28px;
                                 color: $mavi;
-                                background: $sari;
+                                margin-left: 16px;
+                                margin-top: 13px;
+                            }
+    
+                            .giris-text-2{
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: $mavi;
+                                margin-left: 16px;
                             }
                         }
-
-                        .uye-ol-buton{
-                            background: $mavi;
-                            color: $sari;
-                            border-radius: 5px;
-                            width: 95%;
-                            height: 48px;display: flex;
-                            justify-content: center;
-                            align-items: center;
+    
+                        .kayit{
+                            width: 50%;
+                            height: 100%;
                             text-decoration: none;
-                            button{
-                                color: #fff;
-                                background: $mavi;
+                            border-bottom: 4px solid transparent;
+
+                            &:hover{
+                                p{
+                                    color: $mavi;
+                                }
                             }
+    
+                            .kayit-text-1{
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: $gri;
+                                margin-left: 16px;
+                                margin-top: 13px;
+                            }
+    
+                            .kayit-text-2{
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: $gri;
+                                margin-left: 16px;
+                            }
+                        }
+                    }
+                    
+                    .giris-content{
+                        display: block;
+                        width: 100%;
+                        height: 80%;
+    
+                        .giris-menu{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 20px 0;
+    
+                            .opet-giris-text{
+                                width: 95%;
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+    
+                            .gsm{
+                                width: 95%;
+                                height: 48px;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0,0,0,0.2);
+                                padding: 0 20px;
+                            }
+    
+    
+                            .giris-yap-buton{
+                                background: $sari;
+                                color: $mavi;
+                                border-radius: 5px;
+                                width: 95%;
+                                height: 48px;display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: $mavi;
+                                    background: $sari;
+                                    cursor: pointer;
+                                }
+                            }
+    
+                            .uye-ol-buton{
+                                background: $mavi;
+                                color: $sari;
+                                border-radius: 5px;
+                                width: 95%;
+                                height: 48px;display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: #fff;
+                                    background: $mavi;
+                                    cursor: pointer;
+                                }
+                            }
+                            
+                        }
+    
+                        .kayit-menu{
+                            display: none;
                         }
                         
                     }
 
-                    .kayit-menu{
-                        display: none;          
+                    .kayit-content{
+                        background: #fff;
+                        width: 100%;
+                        height: 1810px;
+                        display: none;
+                        flex-direction: column;
+
+                        .form-text{
+                            margin-top: 24px;
+                            margin-left: 15px;
+                            margin-right: 56px;
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+
+                        .valids{
+                            width: 100%;
+                            height: 45%;
+                            padding-top: 1px;
+
+                            .valid{
+                                margin-left: 15px;
+                                margin-right: 15px;
+                                margin-top: 20px;
+                                height: 90px;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                p{
+                                    color: $mavi;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                }
+                                input{
+                                    width: 100%;
+                                    height: 48px;
+                                    border: 1px solid $gri;
+                                    padding-left: 15px;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+
+                        .boxes{
+                            width: 100%;
+                            height: 50%;
+                            .tik{
+                                width: 20px;
+                                height: 20px;
+                                background: #13AE59;
+                                padding: 10px;
+                                margin-top: 5px;
+                                border-radius: 5px;
+                                border: 1px solid $gri;
+                            }
+                            .tik-white{
+                                width: 20px;
+                                height: 20px;
+                                background: #fff;
+                                padding: 10px;
+                                margin-top: 5px;
+                                border-radius: 5px;
+                            }
+                            .box{
+                                display: flex;
+                                margin-left: 15px;
+                                margin-right: 22px;
+                                margin-top: 20px;
+                                justify-content: space-between;
+                                align-content: center;
+                                a{
+                                    color: #000;
+                                    text-decoration: underline;
+                                }
+                                p{
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    margin-left: 10px;
+                                }
+                            }
+                            .box-down{
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 35px;
+                                margin-right: 22px;
+                                margin-top: 20px;
+                                justify-content: space-between;
+                                align-content: center;
+                                p{
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    margin-left: 10px;
+                                }
+                                .options{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    margin-top: 10px;
+                                    .left{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-content: center;
+                                        p{
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                    .right{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-content: center;
+                                        margin-left: 30px;
+                                        p{
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                            a{
+                                text-decoration: none;
+                                width: 90%;
+                                .devam-buton{
+                                    width: 90%;
+                                    height: 48px;
+                                    background: $mavi;
+                                    color: #fff;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    padding-top: 15px;
+                                    border-radius: 5px;
+                                    margin-left: 15px;
+                                    margin-top: 30px;
+
+                                }
+                            }
+
+                            .valid-text{
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: $gri;
+                                margin-left: 15px;
+                                margin-top: 55px;
+                            }
+                            
+                        }
+
+                        .auth{
+                            width: 100%;
+                            height: 100%;
+                            background: #13AE59;
+                        }
+                        
                     }
             }
-        }
+            }
+            
 
             .otobilim{
                 width: 100%;
                 display: flex;
-                height: 20%;
+                height: 100px;
                 justify-content: center;
                 align-items: center;
+                background: $background;
 
                 .otobilim-box{
-                    width: 95%;
+                    width: 97%;
                     height: 75%;
                     background: #fff;
                     border-radius: 15px;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
-                    margin-top: -6px;
+                    margin-top: px;
 
                     .text{
                         display: flex;
@@ -250,9 +447,18 @@ html,body{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-top: -5px;
+
+        .footer-top{
+            display: none;
+        }
+
+        .footer-bot{
+            display: none;
+        }
 
         .tel{
-            margin-top: 30px;
+            padding-top:30px;
             width: 250px;
         }
 
@@ -340,6 +546,7 @@ html,body{
     .info{
         width: 100%;
         height: 368px;
+        background: #fff;
 
         .icons{
             width: 100%;
@@ -400,194 +607,213 @@ html,body{
     .main{
         height: 570px;
         width: 100%;
-        background: linear-gradient(to right,#010426, #202f5a);
+        background: $background;
 
         .bireysel{
             height: 16%;
         }
 
-        .uyelik{
-            width: 100%;
-            height: 65%;
-            background: #fff;
-
-            .giris-uyelik{
+        .boxes{
+            .uyelik{
                 width: 100%;
-                height: 28%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .giris{
-                    width: 50%;
-                    height: 100%;
-                    text-decoration: none;
-                    border-bottom: 4px solid $mavi;
-
-                    .giris-text-1{
-                        font-size: 18px;
-                        line-height: 28px;
-                        color: $mavi;
-                        margin-left: 16px;
-                        margin-top: 23px;
-                    }
-
-                    .giris-text-2{
-                        font-size: 14px;
-                        line-height: 22px;
-                        color: $mavi;
-                        margin-left: 16px;
-                    }
-                }
-
-                .kayit{
-                    width: 50%;
-                    height: 100%;
-                    text-decoration: none;
-                    border-bottom: 4px solid transparent;
-
-                    .kayit-text-1{
-                        font-size: 18px;
-                        line-height: 28px;
-                        color: $gri;
-                        margin-left: 16px;
-                        margin-top: 23px;
-                    }
-
-                    .kayit-text-2{
-                        font-size: 14px;
-                        line-height: 22px;
-                        color: $gri;
-                        margin-left: 16px;
-                    }
-                }
-            }
-
-            .giris-content{
-                display: flex;
-                width: 100%;
-                height: 72%;
-
-                    .giris-menu{
+                height: 65%;
+                background: #fff;
+    
+                .giris-uyelik{
+                    width: 100%;
+                    height: 28%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .giris{
                         width: 50%;
                         height: 100%;
-                        display: flex;
-                        justify-content: space-around;
-                        flex-direction: column;
-                        align-items: center;
-                        padding:20px 0;
-        
-                        .opet-giris-text{
-                            width: 95%;
+                        text-decoration: none;
+                        border-bottom: 4px solid $mavi;
+    
+                        .giris-text-1{
                             font-size: 18px;
                             line-height: 28px;
-                        }
-        
-                        .gsm{
-                            width: 95%;
-                            height: 48px;
-                            border-radius: 5px;
-                            border: 1px solid rgba(0,0,0,0.2);
-                            padding: 0 20px;
-                        }
-        
-        
-                        .giris-yap-buton{
-                            background: $sari;
                             color: $mavi;
-                            border-radius: 5px;
-                            width: 95%;
-                            height: 48px;display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-decoration: none;
-                            button{
-                                color: $mavi;
-                                background: $sari;
-                            }
+                            margin-left: 16px;
+                            margin-top: 23px;
                         }
-                        
-        
-                        .uye-ol-buton{
-                            background: $mavi;
-                            color: $sari;
-                            border-radius: 5px;
-                            width: 95%;
-                            height: 48px;
-                            display: none;
-                            justify-content: center;
-                            align-items: center;
-                            text-decoration: none;
-                            button{
-                                color: #fff;
-                                background: $mavi;
-                            }
+    
+                        .giris-text-2{
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $mavi;
+                            margin-left: 16px;
                         }
                     }
-
-                    .kayit-menu{
+    
+                    .kayit{
                         width: 50%;
                         height: 100%;
-                        display: flex;
-                        justify-content: space-around;
-                        flex-direction: column;
-                        align-items: center;
-                        padding: 20px 0;
-        
-                        .opet-giris-text{
-                            width: 95%;
+                        text-decoration: none;
+                        border-bottom: 4px solid transparent;
+    
+                        .kayit-text-1{
                             font-size: 18px;
                             line-height: 28px;
+                            color: $gri;
+                            margin-left: 16px;
+                            margin-top: 23px;
                         }
-        
-                        .gsm{
-                            width: 95%;
-                            height: 48px;
-                            border-radius: 5px;
-                            border: 1px solid rgba(0,0,0,0.2);
-                            padding: 0 20px;
-                        }
-        
-        
-                        .giris-yap-buton{
-                            background: $sari;
-                            color: $mavi;
-                            border-radius: 5px;
-                            width: 95%;
-                            height: 48px;display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-decoration: none;
-                            button{
-                                color: $mavi;
-                                background: $sari;
-                            }
-                        }
-                        
-        
-                        .uye-ol-buton{
-                            background: $mavi;
-                            color: $sari;
-                            border-radius: 5px;
-                            width: 95%;
-                            height: 48px;display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-decoration: none;
-                            button{
-                                color: #fff;
-                                background: $mavi;
-                            }
+    
+                        .kayit-text-2{
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $gri;
+                            margin-left: 16px;
                         }
                     }
-
                 }
+    
+                .giris-content{
+                    display: flex;
+                    width: 100%;
+                    height: 72%;
+    
+                        .giris-menu{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            align-items: center;
+                            padding:20px 0;
+            
+                            .opet-giris-text{
+                                width: 95%;
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+            
+                            .gsm{
+                                width: 95%;
+                                height: 48px;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0,0,0,0.2);
+                                padding: 0 20px;
+                            }
+            
+            
+                            .giris-yap-buton{
+                                background: $sari;
+                                color: $mavi;
+                                border-radius: 5px;
+                                width: 95%;
+                                height: 48px;display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: $mavi;
+                                    background: $sari;
+                                }
+                            }
+                            
+            
+                            .uye-ol-buton{
+                                background: $mavi;
+                                color: $sari;
+                                border-radius: 5px;
+                                width: 95%;
+                                height: 48px;
+                                display: none;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
 
+                                button{
+                                    color: #fff;
+                                    background: $mavi;
+                                }
+                            }
+                        }
+    
+                        .kayit-menu{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 20px 0;
+            
+                            .opet-giris-text{
+                                width: 95%;
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+            
+                            .gsm{
+                                width: 95%;
+                                height: 48px;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0,0,0,0.2);
+                                padding: 0 20px;
+                            }
+            
+            
+                            .giris-yap-buton{
+                                background: $sari;
+                                color: $mavi;
+                                border-radius: 5px;
+                                width: 95%;
+                                height: 48px;display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: $mavi;
+                                    background: $sari;
+                                }
+                            }
+                            
+            
+                            .uye-ol-buton{
+                                background: $mavi;
+                                color: $sari;
+                                border-radius: 5px;
+                                width: 95%;
+                                height: 48px;display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: #fff;
+                                    background: $mavi;
+                                }
+                            }
+                        }
+    
+                }
+    
+                .kayit-content{
+                    display: none;
+                    margin-top: -70px;
+
+                    .form-text{
+                        margin-top: 90px;
+                    }
+                }    
+                }
+    
+                .main-right{
+                    .opet-mobil{
+                        display: none;
+                    }
+                }
+    
                 
             }
-
-            
         }
+        
+
+        
         .footer{
             width: 100%;
             height: 380px;
@@ -596,6 +822,14 @@ html,body{
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+
+            .footer-bot{
+                display: none;
+            }
+
+            .footer-top{
+                display: none;
+            }
     
             .tel{
                 margin-top: 30px;
@@ -651,6 +885,7 @@ html,body{
                 height: 150px;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
                 
                 .download-text{
                 color: rgba(255,255,255,0.2);
@@ -680,4 +915,672 @@ html,body{
                 
         }
     }
+}
+@media (min-width: 1250px){
+
+    .header{
+        width: 100%;
+        height: 96px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .navbar-brand{
+            display: none;
+            }
+
+        .navbar-brand-pc{
+            width: 190px;
+            display: block;
+            padding: 4%;
+            img{
+                width: 128px;
+                height: 40px;
+            }
+        }
+
+        .header-right{
+            display: none;
+        }
+
+        .header-right-pc{
+            display: block;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            
+            .list{
+                width: 55%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    margin-left: 90px;
+                    li{
+                        list-style: none;
+                        margin: 20px;
+                        a{
+                            color: $mavi;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-info{
+                width: 45%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                input{
+                    width: 45%;
+                    height: 48px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(0,0,0,0.2);
+                    margin-left: 40px;
+                }
+
+                .online-islemler{
+                    background: #FFD300;
+                    width: 192px;
+                    height: 48px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 10px;
+                    margin-left: -70px;
+                    text-decoration: none;
+                    flex-direction: column;
+                    
+                    div{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 10px;
+                        img{
+                            background: #fff;
+                            padding: 10px;
+                            border-radius: 50%;
+                        }
+
+                        .text{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            color: $mavi;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+    .main{
+        height: 570px;
+        width: 100%;
+        background: $background;
+
+        .bireysel{
+            height: 16%;
+            padding-left: 150px;
+        }
+
+        .boxes{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .uyelik{
+                width: 60%;
+                height: 75%;
+                background: #fff;
+                border-radius: 15px;
+                margin-left: 165px;
+    
+                .giris-uyelik{
+                    width: 100%;
+                    height: 22%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .giris{
+                        width: 50%;
+                        height: 100%;
+                        text-decoration: none;
+                        border-bottom: 4px solid $mavi;
+    
+                        .giris-text-1{
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: $mavi;
+                            margin-left: 16px;
+                            margin-top: 23px;
+                        }
+    
+                        .giris-text-2{
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $mavi;
+                            margin-left: 16px;
+                        }
+                    }
+    
+                    .kayit{
+                        width: 50%;
+                        height: 100%;
+                        text-decoration: none;
+                        border-bottom: 4px solid transparent;
+    
+                        .kayit-text-1{
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: $gri;
+                            margin-left: 16px;
+                            margin-top: 23px;
+                        }
+    
+                        .kayit-text-2{
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $gri;
+                            margin-left: 16px;
+                        }
+                    }
+                }
+    
+                .giris-content{
+                    display: flex;
+                    width: 100%;
+                    height: 72%;
+    
+                        .giris-menu{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding:60px;
+            
+                            .opet-giris-text{
+                                width: 95%;
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+            
+                            .gsm{
+                                width: 95%;
+                                height: 48px;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0,0,0,0.2);
+                                padding: 0 20px;
+                            }
+            
+            
+                            .giris-yap-buton{
+                                background: $sari;
+                                color: $mavi;
+                                border-radius: 5px;
+                                width: 180px;
+                                height: 48px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: $mavi;
+                                    background: $sari;
+                                }
+                            }
+                            
+            
+                            .uye-ol-buton{
+                                background: $mavi;
+                                color: $sari;
+                                border-radius: 5px;
+                                width: 95%;
+                                height: 48px;
+                                display: none;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                
+                                button{
+                                    color: #fff;
+                                    background: $mavi;
+                                }
+                            }
+                        }
+    
+                        .kayit-menu{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 60px;
+            
+                            .opet-giris-text{
+                                width: 95%;
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+            
+                            .gsm{
+                                width: 95%;
+                                height: 48px;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0,0,0,0.2);
+                                padding: 0 20px;
+                            }
+            
+            
+                            .giris-yap-buton{
+                                background: $sari;
+                                color: $mavi;
+                                border-radius: 5px;
+                                width: 180px;
+                                height: 48px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: $mavi;
+                                    background: $sari;
+                                }
+                            }
+                            
+            
+                            .uye-ol-buton{
+                                background: $mavi;
+                                color: $sari;
+                                border-radius: 5px;
+                                width: 180px;
+                                height: 48px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                button{
+                                    color: #fff;
+                                    background: $mavi;
+                                }
+                            }
+                        }
+    
+                }
+                
+                .kayit-content{
+                    background: #fff;
+                    width: 100%;
+                    height: 1810px;
+                    display: none;
+                    flex-direction: column;
+
+                    .form-text{
+                        margin-top: 75px;
+                        margin-left: 15px;
+                        margin-right: 56px;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    .valids{
+                        width: 50%;
+                        height: 25%;
+                        padding-top: 1px;
+                        display: grid;
+                        grid-template-columns: 100% 100%;
+
+                        .valid{
+                            margin-left: 15px;
+                            margin-right: 15px;
+                            margin-top: 20px;
+                            height: 90px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            p{
+                                color: $mavi;
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                            input{
+                                width: 100%;
+                                height: 48px;
+                                border: 1px solid $gri;
+                                padding-left: 15px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+
+                    .boxes{
+                        width: 100%;
+                        height: 50%;
+                        .tik{
+                            width: 20px;
+                            height: 20px;
+                            background: #13AE59;
+                            padding: 10px;
+                            margin-top: 5px;
+                            border-radius: 5px;
+                            border: 1px solid $gri;
+                        }
+                        .tik-white{
+                            width: 20px;
+                            height: 20px;
+                            background: #fff;
+                            padding: 10px;
+                            margin-top: 5px;
+                            border-radius: 5px;
+                        }
+                        .box{
+                            display: flex;
+                            margin-left: 15px;
+                            margin-right: 22px;
+                            margin-top: 20px;
+                            justify-content: space-between;
+                            align-content: center;
+                            a{
+                                color: #000;
+                                text-decoration: underline;
+                            }
+                            p{
+                                font-size: 14px;
+                                line-height: 22px;
+                                margin-left: 10px;
+                            }
+                        }
+                        .box-down{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 35px;
+                            margin-right: 22px;
+                            margin-top: 20px;
+                            justify-content: space-between;
+                            align-content: center;
+                            p{
+                                font-size: 14px;
+                                line-height: 22px;
+                                margin-left: 10px;
+                            }
+                            .options{
+                                display: flex;
+                                justify-content: center;
+                                align-content: center;
+                                margin-top: 10px;
+                                .left{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    p{
+                                        margin-top: 5px;
+                                    }
+                                }
+                                .right{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    margin-left: 30px;
+                                    p{
+                                        margin-top: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        a{
+                            text-decoration: none;
+                            width: 90%;
+                            .devam-buton{
+                                width: 90%;
+                                height: 48px;
+                                background: $mavi;
+                                color: #fff;
+                                display: flex;
+                                justify-content: center;
+                                align-content: center;
+                                padding-top: 15px;
+                                border-radius: 5px;
+                                margin-left: 15px;
+                                margin-top: 30px;
+
+                            }
+                        }
+
+                        .valid-text{
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: $gri;
+                            margin-left: 15px;
+                            margin-top: 55px;
+                        }
+                        
+                    }
+                    
+                }
+
+                .kayit-content{
+                    display: none;
+                    .boxes{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }     
+                }
+
+                .main-right{
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .otobilim{
+                        width: 65%;
+                        margin-top: -10px;
+                        margin-left: 20px;
+                    }
+
+                    .opet-mobil{
+                        margin-left: 30px;
+                        display: block;
+
+                        img{
+                            width: 66.3%;
+                            height: 66%;
+                        }
+                        .foto-alt{
+                            background: #fff;
+                            width: 66.3%;
+                            height: 57%;
+                            margin-top: -4px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            p,a{
+                                padding: 0 30px;
+                            }
+                            a{
+                                text-decoration: none;
+                                padding-top: 20px;
+                                color: $mavi;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer{
+            width: 100%;
+            height: 552px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .footer-bot{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .footer-left{
+                    width: 80%;
+                    height: 75.3%;
+    
+                    h3{
+                        margin-left: 175px;
+                        margin-top:-20px;
+                        color: #fff;
+                    }
+    
+                    .lists{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        margin-left: 175px;
+                        margin-top: 20px;
+                        ul{
+                            width: 20%;
+                            height: 88%;
+                            li{
+                                list-style: none;
+                                font-size: 14px;
+                                line-height: 22px;
+                                padding: 20px 0;
+                                a{
+                                    color: #fff;
+                                    text-decoration: none;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+    
+                            
+                        }
+                        .other-list{
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+
+                            ul{
+                                margin-top: 50px;
+                                li{
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                    }
+    
+                    .footer-right{
+                        width: 30%;
+                        height: 100%;
+                        padding: 20px 35px;
+
+                        p{
+                            margin-top: 20px;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #fff;
+                        }
+                        
+                        .buttons{
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 32px;
+                        }
+                    }
+    
+            }
+
+            
+
+            .download{
+                display: none;
+            }
+            
+            .tel, .icons{
+                display: none;
+            }
+
+            .footer-top{
+                width: 100%;
+                display: flex;
+                padding: 10px 10%;
+                padding-bottom: 30px;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+
+                .tel, .icons{
+                    display: block;
+                    display: flex;
+                    border: none;
+                }
+
+                .icons{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 40%;
+                    height: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .info{
+            width: 100%;
+            height: 131px;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .copyright{
+                margin-top: 45px;
+                display: flex;
+                flex-direction: row;
+                p{
+                    margin-left: 40px;
+                    margin-top: 20px;
+                }
+            }
+
+            .list{
+                ul{
+                    display: flex;
+                    margin-left: -380px;
+                    li{
+                        list-style: none;
+                        margin-left: 80px;
+                    }
+                }
+            }
+        }
 }

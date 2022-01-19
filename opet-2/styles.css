@@ -10,7 +10,7 @@
 
 html, body {
   width: 100%;
-  height: 1412px;
+  height: 1329px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +18,8 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: -webkit-gradient(linear, left top, right top, from(#010426), to(#202f5a));
+  background: linear-gradient(to right, #010426, #202f5a);
 }
 
 @media (min-width: 375px), (max-width: 375px) {
@@ -41,6 +43,12 @@ html, body {
   .header .navbar-brand img {
     width: 89px;
     height: 28px;
+  }
+  .header .navbar-brand-pc {
+    display: none;
+  }
+  .header .header-right-pc {
+    display: none;
   }
   .header .header-right {
     width: 100px;
@@ -74,6 +82,12 @@ html, body {
     background: -webkit-gradient(linear, left top, right top, from(#010426), to(#202f5a));
     background: linear-gradient(to right, #010426, #202f5a);
   }
+  .main .tab-content {
+    display: none;
+  }
+  .main .tab-content.active {
+    display: block;
+  }
   .main .bireysel {
     color: #fff;
     font-size: 28px;
@@ -85,12 +99,19 @@ html, body {
   .main .bireysel p {
     text-align: left;
   }
-  .main .uyelik {
+  .main .main-right .opet-mobil {
+    display: none;
+  }
+  .main .boxes {
+    width: 100%;
+    height: 100%;
+  }
+  .main .boxes .uyelik {
     width: 100%;
     height: 65%;
     background: #fff;
   }
-  .main .uyelik .giris-uyelik {
+  .main .boxes .uyelik .giris-uyelik {
     width: 100%;
     height: 20%;
     display: -webkit-box;
@@ -103,52 +124,56 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .main .uyelik .giris-uyelik .giris {
+  .main .boxes .uyelik .giris-uyelik .giris {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid #134fae;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-1 {
+  .main .boxes .uyelik .giris-uyelik .giris:hover p {
+    color: #134fae;
+  }
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #134fae;
     margin-left: 16px;
     margin-top: 13px;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-2 {
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #134fae;
     margin-left: 16px;
   }
-  .main .uyelik .giris-uyelik .kayit {
+  .main .boxes .uyelik .giris-uyelik .kayit {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid transparent;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-1 {
+  .main .boxes .uyelik .giris-uyelik .kayit:hover p {
+    color: #134fae;
+  }
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #8a9ab4;
     margin-left: 16px;
     margin-top: 13px;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-2 {
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #8a9ab4;
     margin-left: 16px;
   }
-  .main .uyelik .giris-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .main .boxes .uyelik .giris-content {
+    display: block;
     width: 100%;
     height: 80%;
   }
-  .main .uyelik .giris-content .giris-menu {
+  .main .boxes .uyelik .giris-content .giris-menu {
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -165,20 +190,20 @@ html, body {
             align-items: center;
     padding: 20px 0;
   }
-  .main .uyelik .giris-content .giris-menu .opet-giris-text {
+  .main .boxes .uyelik .giris-content .giris-menu .opet-giris-text {
     width: 95%;
     font-size: 18px;
     line-height: 28px;
   }
-  .main .uyelik .giris-content .giris-menu .gsm {
+  .main .boxes .uyelik .giris-content .giris-menu .gsm {
     width: 95%;
     height: 48px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 20px;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton {
-    background: #E3CB25;
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton {
+    background: yellow;
     color: #134fae;
     border-radius: 5px;
     width: 95%;
@@ -194,13 +219,14 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton button {
     color: #134fae;
-    background: #E3CB25;
+    background: yellow;
+    cursor: pointer;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton {
     background: #134fae;
-    color: #E3CB25;
+    color: yellow;
     border-radius: 5px;
     width: 95%;
     height: 48px;
@@ -215,28 +241,220 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton button {
     color: #fff;
     background: #134fae;
+    cursor: pointer;
   }
-  .main .uyelik .giris-content .kayit-menu {
+  .main .boxes .uyelik .giris-content .kayit-menu {
     display: none;
+  }
+  .main .boxes .uyelik .kayit-content {
+    background: #fff;
+    width: 100%;
+    height: 1810px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .uyelik .kayit-content .form-text {
+    margin-top: 24px;
+    margin-left: 15px;
+    margin-right: 56px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main .boxes .uyelik .kayit-content .valids {
+    width: 100%;
+    height: 45%;
+    padding-top: 1px;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid p {
+    color: #134fae;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #8a9ab4;
+    padding-left: 15px;
+    border-radius: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes {
+    width: 100%;
+    height: 50%;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .tik {
+    width: 20px;
+    height: 20px;
+    background: #13AE59;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #8a9ab4;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .tik-white {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 22px;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box a {
+    color: #000;
+    text-decoration: underline;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 35px;
+    margin-right: 22px;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .left p {
+    margin-top: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-left: 30px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .right p {
+    margin-top: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes a {
+    text-decoration: none;
+    width: 90%;
+  }
+  .main .boxes .uyelik .kayit-content .boxes a .devam-buton {
+    width: 90%;
+    height: 48px;
+    background: #134fae;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .valid-text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #8a9ab4;
+    margin-left: 15px;
+    margin-top: 55px;
+  }
+  .main .boxes .uyelik .kayit-content .auth {
+    width: 100%;
+    height: 100%;
+    background: #13AE59;
   }
   .main .otobilim {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 20%;
+    height: 100px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(#010426), to(#202f5a));
+    background: linear-gradient(to right, #010426, #202f5a);
   }
   .main .otobilim .otobilim-box {
-    width: 95%;
+    width: 97%;
     height: 75%;
     background: #fff;
     border-radius: 15px;
@@ -248,7 +466,7 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -6px;
+    margin-top: px;
   }
   .main .otobilim .otobilim-box .text {
     display: -webkit-box;
@@ -295,9 +513,16 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: -5px;
+  }
+  .footer .footer-top {
+    display: none;
+  }
+  .footer .footer-bot {
+    display: none;
   }
   .footer .tel {
-    margin-top: 30px;
+    padding-top: 30px;
     width: 250px;
   }
   .footer .icons {
@@ -409,6 +634,7 @@ html, body {
   .info {
     width: 100%;
     height: 368px;
+    background: #fff;
   }
   .info .icons {
     width: 100%;
@@ -496,12 +722,12 @@ html, body {
   .main .bireysel {
     height: 16%;
   }
-  .main .uyelik {
+  .main .boxes .uyelik {
     width: 100%;
     height: 65%;
     background: #fff;
   }
-  .main .uyelik .giris-uyelik {
+  .main .boxes .uyelik .giris-uyelik {
     width: 100%;
     height: 28%;
     display: -webkit-box;
@@ -514,52 +740,52 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .main .uyelik .giris-uyelik .giris {
+  .main .boxes .uyelik .giris-uyelik .giris {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid #134fae;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-1 {
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #134fae;
     margin-left: 16px;
     margin-top: 23px;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-2 {
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #134fae;
     margin-left: 16px;
   }
-  .main .uyelik .giris-uyelik .kayit {
+  .main .boxes .uyelik .giris-uyelik .kayit {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid transparent;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-1 {
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #8a9ab4;
     margin-left: 16px;
     margin-top: 23px;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-2 {
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #8a9ab4;
     margin-left: 16px;
   }
-  .main .uyelik .giris-content {
+  .main .boxes .uyelik .giris-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 72%;
   }
-  .main .uyelik .giris-content .giris-menu {
+  .main .boxes .uyelik .giris-content .giris-menu {
     width: 50%;
     height: 100%;
     display: -webkit-box;
@@ -576,20 +802,20 @@ html, body {
             align-items: center;
     padding: 20px 0;
   }
-  .main .uyelik .giris-content .giris-menu .opet-giris-text {
+  .main .boxes .uyelik .giris-content .giris-menu .opet-giris-text {
     width: 95%;
     font-size: 18px;
     line-height: 28px;
   }
-  .main .uyelik .giris-content .giris-menu .gsm {
+  .main .boxes .uyelik .giris-content .giris-menu .gsm {
     width: 95%;
     height: 48px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 20px;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton {
-    background: #E3CB25;
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton {
+    background: yellow;
     color: #134fae;
     border-radius: 5px;
     width: 95%;
@@ -605,13 +831,13 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton button {
     color: #134fae;
-    background: #E3CB25;
+    background: yellow;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton {
     background: #134fae;
-    color: #E3CB25;
+    color: yellow;
     border-radius: 5px;
     width: 95%;
     height: 48px;
@@ -624,11 +850,11 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton button {
     color: #fff;
     background: #134fae;
   }
-  .main .uyelik .giris-content .kayit-menu {
+  .main .boxes .uyelik .giris-content .kayit-menu {
     width: 50%;
     height: 100%;
     display: -webkit-box;
@@ -645,20 +871,20 @@ html, body {
             align-items: center;
     padding: 20px 0;
   }
-  .main .uyelik .giris-content .kayit-menu .opet-giris-text {
+  .main .boxes .uyelik .giris-content .kayit-menu .opet-giris-text {
     width: 95%;
     font-size: 18px;
     line-height: 28px;
   }
-  .main .uyelik .giris-content .kayit-menu .gsm {
+  .main .boxes .uyelik .giris-content .kayit-menu .gsm {
     width: 95%;
     height: 48px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 20px;
   }
-  .main .uyelik .giris-content .kayit-menu .giris-yap-buton {
-    background: #E3CB25;
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton {
+    background: yellow;
     color: #134fae;
     border-radius: 5px;
     width: 95%;
@@ -674,13 +900,13 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .kayit-menu .giris-yap-buton button {
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton button {
     color: #134fae;
-    background: #E3CB25;
+    background: yellow;
   }
-  .main .uyelik .giris-content .kayit-menu .uye-ol-buton {
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton {
     background: #134fae;
-    color: #E3CB25;
+    color: yellow;
     border-radius: 5px;
     width: 95%;
     height: 48px;
@@ -695,9 +921,19 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .kayit-menu .uye-ol-buton button {
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton button {
     color: #fff;
     background: #134fae;
+  }
+  .main .boxes .uyelik .kayit-content {
+    display: none;
+    margin-top: -70px;
+  }
+  .main .boxes .uyelik .kayit-content .form-text {
+    margin-top: 90px;
+  }
+  .main .boxes .main-right .opet-mobil {
+    display: none;
   }
   .footer {
     width: 100%;
@@ -716,6 +952,12 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footer .footer-bot {
+    display: none;
+  }
+  .footer .footer-top {
+    display: none;
   }
   .footer .tel {
     margin-top: 30px;
@@ -791,6 +1033,8 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer .download .download-text {
     color: rgba(255, 255, 255, 0.2);
@@ -825,6 +1069,803 @@ html, body {
   }
   .footer .download .download-buttons .downloadbutton img {
     width: 100%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .header {
+    width: 100%;
+    height: 96px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .navbar-brand {
+    display: none;
+  }
+  .header .navbar-brand-pc {
+    width: 190px;
+    display: block;
+    padding: 4%;
+  }
+  .header .navbar-brand-pc img {
+    width: 128px;
+    height: 40px;
+  }
+  .header .header-right {
+    display: none;
+  }
+  .header .header-right-pc {
+    display: block;
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .header-right-pc .list {
+    width: 55%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header-right-pc .list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 90px;
+  }
+  .header .header-right-pc .list ul li {
+    list-style: none;
+    margin: 20px;
+  }
+  .header .header-right-pc .list ul li a {
+    color: #134fae;
+    text-decoration: none;
+  }
+  .header .header-right-pc .list ul li a:hover {
+    text-decoration: underline;
+  }
+  .header .header-right-pc .header-info {
+    width: 45%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header-right-pc .header-info input {
+    width: 45%;
+    height: 48px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 40px;
+  }
+  .header .header-right-pc .header-info .online-islemler {
+    background: #FFD300;
+    width: 192px;
+    height: 48px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 10px;
+    margin-left: -70px;
+    text-decoration: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header-right-pc .header-info .online-islemler div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .header .header-right-pc .header-info .online-islemler div img {
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .header .header-right-pc .header-info .online-islemler div .text {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #134fae;
+  }
+  .main {
+    height: 570px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#010426), to(#202f5a));
+    background: linear-gradient(to right, #010426, #202f5a);
+  }
+  .main .bireysel {
+    height: 16%;
+    padding-left: 150px;
+  }
+  .main .boxes {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .boxes .uyelik {
+    width: 60%;
+    height: 75%;
+    background: #fff;
+    border-radius: 15px;
+    margin-left: 165px;
+  }
+  .main .boxes .uyelik .giris-uyelik {
+    width: 100%;
+    height: 22%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .boxes .uyelik .giris-uyelik .giris {
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 4px solid #134fae;
+  }
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-1 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #134fae;
+    margin-left: 16px;
+    margin-top: 23px;
+  }
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-2 {
+    font-size: 14px;
+    line-height: 22px;
+    color: #134fae;
+    margin-left: 16px;
+  }
+  .main .boxes .uyelik .giris-uyelik .kayit {
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+  }
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-1 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #8a9ab4;
+    margin-left: 16px;
+    margin-top: 23px;
+  }
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-2 {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8a9ab4;
+    margin-left: 16px;
+  }
+  .main .boxes .uyelik .giris-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 72%;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 60px;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .opet-giris-text {
+    width: 95%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .gsm {
+    width: 95%;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton {
+    background: yellow;
+    color: #134fae;
+    border-radius: 5px;
+    width: 180px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton button {
+    color: #134fae;
+    background: yellow;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton {
+    background: #134fae;
+    color: yellow;
+    border-radius: 5px;
+    width: 95%;
+    height: 48px;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton button {
+    color: #fff;
+    background: #134fae;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 60px;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .opet-giris-text {
+    width: 95%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .gsm {
+    width: 95%;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton {
+    background: yellow;
+    color: #134fae;
+    border-radius: 5px;
+    width: 180px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton button {
+    color: #134fae;
+    background: yellow;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton {
+    background: #134fae;
+    color: yellow;
+    border-radius: 5px;
+    width: 180px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton button {
+    color: #fff;
+    background: #134fae;
+  }
+  .main .boxes .uyelik .kayit-content {
+    background: #fff;
+    width: 100%;
+    height: 1810px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .uyelik .kayit-content .form-text {
+    margin-top: 75px;
+    margin-left: 15px;
+    margin-right: 56px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main .boxes .uyelik .kayit-content .valids {
+    width: 50%;
+    height: 25%;
+    padding-top: 1px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100% 100%;
+        grid-template-columns: 100% 100%;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid p {
+    color: #134fae;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #8a9ab4;
+    padding-left: 15px;
+    border-radius: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes {
+    width: 100%;
+    height: 50%;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .tik {
+    width: 20px;
+    height: 20px;
+    background: #13AE59;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #8a9ab4;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .tik-white {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 22px;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box a {
+    color: #000;
+    text-decoration: underline;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 35px;
+    margin-right: 22px;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .left p {
+    margin-top: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-left: 30px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .right p {
+    margin-top: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes a {
+    text-decoration: none;
+    width: 90%;
+  }
+  .main .boxes .uyelik .kayit-content .boxes a .devam-buton {
+    width: 90%;
+    height: 48px;
+    background: #134fae;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .valid-text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #8a9ab4;
+    margin-left: 15px;
+    margin-top: 55px;
+  }
+  .main .boxes .uyelik .kayit-content {
+    display: none;
+  }
+  .main .boxes .uyelik .kayit-content .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .main-right {
+    width: 30%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .main-right .otobilim {
+    width: 65%;
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+  .main .boxes .main-right .opet-mobil {
+    margin-left: 30px;
+    display: block;
+  }
+  .main .boxes .main-right .opet-mobil img {
+    width: 66.3%;
+    height: 66%;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt {
+    background: #fff;
+    width: 66.3%;
+    height: 57%;
+    margin-top: -4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt p, .main .boxes .main-right .opet-mobil .foto-alt a {
+    padding: 0 30px;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt a {
+    text-decoration: none;
+    padding-top: 20px;
+    color: #134fae;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt a:hover {
+    text-decoration: underline;
+  }
+  .footer {
+    width: 100%;
+    height: 552px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer .footer-bot {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer-bot .footer-left {
+    width: 80%;
+    height: 75.3%;
+  }
+  .footer .footer-bot .footer-left h3 {
+    margin-left: 175px;
+    margin-top: -20px;
+    color: #fff;
+  }
+  .footer .footer-bot .footer-left .lists {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 175px;
+    margin-top: 20px;
+  }
+  .footer .footer-bot .footer-left .lists ul {
+    width: 20%;
+    height: 88%;
+  }
+  .footer .footer-bot .footer-left .lists ul li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 20px 0;
+  }
+  .footer .footer-bot .footer-left .lists ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer .footer-bot .footer-left .lists ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer .footer-bot .footer-left .other-list {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-bot .footer-left .other-list ul {
+    margin-top: 50px;
+  }
+  .footer .footer-bot .footer-left .other-list ul li {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .footer .footer-bot .footer-right {
+    width: 30%;
+    height: 100%;
+    padding: 20px 35px;
+  }
+  .footer .footer-bot .footer-right p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+  }
+  .footer .footer-bot .footer-right .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 32px;
+  }
+  .footer .download {
+    display: none;
+  }
+  .footer .tel, .footer .icons {
+    display: none;
+  }
+  .footer .footer-top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 10%;
+    padding-bottom: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .footer .footer-top .tel, .footer .footer-top .icons {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+  }
+  .footer .footer-top .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .info {
+    width: 100%;
+    height: 131px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .info .copyright {
+    margin-top: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info .copyright p {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .info .list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -380px;
+  }
+  .info .list ul li {
+    list-style: none;
+    margin-left: 80px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
